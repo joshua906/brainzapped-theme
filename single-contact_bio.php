@@ -29,22 +29,23 @@
         ?>
 
         	<div class="col-md-12">
-              	<h1>The man behind the work</h1>
+              	<h1><?php echo $bio; ?></h1>
             </div>
         </div>
     </div>
     <div class="container">
     	<div class="row">
         	<div class="col-md-6">
-              	<p>Eliud George Garcia was born in Harlingen, TX and raised in San Benito, TX.  After graduating from the University of Texas at Austin’s renowned Radio/TV/Film school in 1991, George began his career as a Director of Photography at a couple of production companies in the Dallas area</p>
-                <p>George has shot everything from corporate videos to segments for Oprah, VH1, MTV, the USA Network and others.  Later, he tackled the jobs of producer, director, writer, and editor and fell in love with the creative process.  In 2000, George decided to go out on his own and form EGG Entertainment, Inc. where he provides production services to corporate entities, broadcast networks, and independents.</p>
+              	<p><?php echo $pone; ?></p>
+                <p><?php echo $ptwo; ?></p>
             </div>
             <div class="col-md-6">
-              	<p>George has always dabbled in the world of children and family entertainment, writing short stories and coming up with potential ideas for movies, but it was in late 2003 when George decided it was time to put up or shut up.  He had a concept for a kids show and he needed to find the right talent to do it.  Along came Selena Gomez, a rising talent, who, fortunately, attended George’s audition for his show.  Then came Lewis Parry, a new-comer who George thought would be perfect to play along side Selena.  In 2006, after many trials and tribulations, George finally completed his production.  The result was “Brain Zapped”, a film about a mysterious library, a book-lover and all around super-girl and her best friend.  Brain Zapped is an Official selection of the 2006 KIDS FIRST! Film and Video festival.  Screening dates to come.</p>
+              	<p><?php echo $pthree; ?></p>
             </div>
         </div>
     </div>
 </div>
+<?php endwhile; ?>
 <!-- Contact form-->
 <div class="contact">
 	<div class="container">
