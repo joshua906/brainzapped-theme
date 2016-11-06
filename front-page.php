@@ -59,19 +59,21 @@
     	<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-4">
 
-<?php query_posts('posts_per_page=1'); ?>
+<?php query_posts('posts_per_page=3'); ?>
      <?php while ( have_posts() ) : the_post(); ?>
-      
+
             	<div class="card">
                 	<div class="bw pic">
-  						<img src="<?php echo get_template_directory_uri(); ?>/resources/img/kids-thumbnail.jpg" alt="cardimg" style="width:100%">
+  						        <div class="embed-responsive embed-responsive-16by9">
+                             
+                      </div>
                     	<span class="vlog-format-action small"><i class="fa fa-play"></i></span>
                     </div>
   					<div class="container-card">
                         <p class="category-text"><?php the_category(); ?></p>
                         <h3><a href="#"><?php the_title(); ?></a></h3>
                         <p><?php the_excerpt(); ?></p>
-                    <button class="button">play video</button>
+                    <button class="button"><a href="<?php the_permalink(); ?>">play video</a></button>
   					</div>
 				</div>
      <?php endwhile; ?> 

@@ -2,6 +2,30 @@
 
 
 
+
+
+//Custom Post type
+
+function create_custom_post_types() {
+
+	register_post_type('contact_bio',
+		array(
+			'labels' => array(
+				'name' => _('Contact Bio'),
+				'singular_name' => _('Contact Bio')
+				),
+			'public'=> true,
+			'has_archive' => false,
+			'rewrite' => array(
+				'slug' => 'contact-bios'
+				),
+			)
+		);
+}
+
+add_action('init', 'create_custom_post_types');
+
+
 add_theme_support('menus');
 
 function bz_register_theme_menus(){
