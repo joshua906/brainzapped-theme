@@ -59,16 +59,9 @@
     	<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-4">
 
-			<?php 
-
-				$args = array(
-					'post_type' => 'post',
-					'post_per_page' => 3,
-					);
-				$wp_query = new WP_Query( $args );
-
-				if ( $wp_query->have_post() ) : while ( $wp_query->have_post() ) : $wp_query->the_post();
-				?>
+<?php query_posts('posts_per_page=1'); ?>
+     <?php while ( have_posts() ) : the_post(); ?>
+      
             	<div class="card">
                 	<div class="bw pic">
   						<img src="<?php echo get_template_directory_uri(); ?>/resources/img/kids-thumbnail.jpg" alt="cardimg" style="width:100%">
@@ -81,9 +74,8 @@
                     <button class="button">play video</button>
   					</div>
 				</div>
-			<?php endwhile; else: ?>
-				<p>Sorry, no post yet</p>
-		<?php endif; ?>
+     <?php endwhile; ?> 
+    <?php wp_reset_query(); ?>
 </div>
 <!--<div class="col-xs-12 col-sm-4 col-md-4">
             	<div class="card">
