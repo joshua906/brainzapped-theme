@@ -57,16 +57,13 @@
     </div>
     <div class="container">
     	<div class="row">
-<div class="col-xs-12 col-sm-4 col-md-4">
 
-<?php query_posts('posts_per_page=3'); ?>
-     <?php while ( have_posts() ) : the_post(); ?>
-
+    <?php query_posts('posts_per_page=3'); ?>
+         <?php while ( have_posts() ) : the_post(); ?>
+        <div class="col-xs-12 col-sm-4 col-md-4">
             	<div class="card">
                 	<div class="bw pic">
-  						        <div class="embed-responsive embed-responsive-16by9">
-                             
-                      </div>
+  						        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/resources/img/girl-blue-blue.jpg" alt="cardimg" style="width:100%"></a>
                     	<span class="vlog-format-action small"><i class="fa fa-play"></i></span>
                     </div>
   					<div class="container-card">
@@ -76,9 +73,9 @@
                     <button class="button"><a href="<?php the_permalink(); ?>">play video</a></button>
   					</div>
 				</div>
-     <?php endwhile; ?> 
+        </div>
+             <?php endwhile; ?> 
     <?php wp_reset_query(); ?>
-</div>
 <!--<div class="col-xs-12 col-sm-4 col-md-4">
             	<div class="card">
                 	<div class="bw pic">

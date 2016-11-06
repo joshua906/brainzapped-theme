@@ -1,20 +1,9 @@
-<?php
-/**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
- *
- * @package WordPress
- * @subpackage Accelerate Marketing
- * @since Accelerate Marketing 1.0
- */
 
-get_header(); ?>
 
-	
+
+
+<?php get_header(); ?>
+
 <div class="contact-header">
 	<div class="container">
     	<div class="row">
@@ -28,6 +17,17 @@ get_header(); ?>
 <div class="bio">
 	<div class="container">
     	<div class="row">
+
+        <?php while ( have_posts() ) : the_post(); 
+
+
+                 $bio = get_field('bio_title');
+                 $pone = get_field('p_one');
+                 $ptwo = get_field('p_two');
+                 $pthree = get_field('p_three');
+
+        ?>
+
         	<div class="col-md-12">
               	<h1>The man behind the work</h1>
             </div>
@@ -75,6 +75,5 @@ get_header(); ?>
         </div>
     </div>
 </div>
-
 
 <?php get_footer(); ?>
