@@ -76,30 +76,6 @@
         </div>
              <?php endwhile; ?> 
     <?php wp_reset_query(); ?>
-<!--<div class="col-xs-12 col-sm-4 col-md-4">
-            	<div class="card">
-                	<div class="bw pic">
-  						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/resources/img/girl-blue-blue.jpg" alt="cardimg" style="width:100%"></a>
-                    </div>
-  					<div class="container-card">
-                    <p class="category-text">IF I KNEW THEN WHAT I KNOW NOW</p>
-                    <h3><a href="#">Advice for High School Freshman </a></h3>
-    				<p>We know being a freshman in high school can be nerve-racking, especially the first few weeks. Follow ...</p>
-                    <button class="button">play video</button>
-  </div>
-</div>
-       	  </div>
-            <div class="col-xs-12 col-sm-4 col-md-4">
-            	<div class="card">
-  					<img src="<?php echo get_template_directory_uri(); ?>/resources/img/girl-green.jpg" alt="cardimg" style="width:100%">
-  					<div class="container-card">
-                    <p class="category-text">IF I KNEW THEN WHAT I KNOW NOW</p>
-                    <h3><a href="#">Advice for High School Freshman </a></h3>
-    				<p>We know being a freshman in high school can be nerve-racking, especially the first few weeks. Follow ...</p>
-                    <button class="button">play video</button>
-  </div>
-</div>
-        	</div>-->
         </div>
     </div>
 </div>
