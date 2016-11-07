@@ -6,6 +6,10 @@
 Global Changes
 
 ----------------------*/
+.text-transform {
+    text-decoration: none;
+    text-transform: uppercase;
+}
 .container-single {
     padding-right: 15px;
     padding-left: 15px;
@@ -764,6 +768,12 @@ playlist
 	background-color: #fbfbfb;
 }
 /************video page *********************/
+li .cat-item {
+    list-style-type: none;
+    margin-left: -37px;
+    font-size: 1.2em;
+    color: #88888;
+    }
 .video-header {
 	background-image:url(../img/background.jpg);
 	background-size: cover;

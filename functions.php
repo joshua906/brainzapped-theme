@@ -1,8 +1,23 @@
 <?php 
 
-
-
-
+//enable widget area
+function bz_widgets_init() {
+	register_sidebar( array(
+		'name'          => __( 'Widget Area', 'bz' ),
+		'id'            => 'sidebar-1',
+		'description'   => __( 'Add widgets here to appear in your blog sidebar.', 'bz' ),
+		'before_widget' => '',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h4 class="text-transform">',
+		'after_title'   => '</h4>',
+		'wp_list_categories' => '<ul class="category-layout',
+	) );
+}
+add_action( 'widgets_init', 'bz_widgets_init' );
+//theme support
+	add_theme_support( 'post-formats', array(
+		'aside', 'image', 'video', 'audio', 'quote', 'link', 'gallery',
+	) );
 
 //Custom Post type
 
