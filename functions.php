@@ -32,6 +32,7 @@ function create_custom_post_types() {
 				),
 			'public'=> true,
 			'has_archive' => false,
+			'show_in_nav_menus' => true,
 			'rewrite' => array(
 				'slug' => 'contact-bios'
 				),

@@ -98,10 +98,11 @@
         </div>
     	<div class="row">
         	<div class="col-xs-12 col-sm-6 col-md-6">
+          <?php if ( have_posts() ): ?>
+              <?php while ( have_posts() ) : the_post(); ?>
             <div class="container-card-most">
             	<div class="row">
                 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    
                     	<div class="most-watched-img">
                         	<img src="<?php echo get_template_directory_uri(); ?>/resources/img/guy-red.jpg">
                              
@@ -118,6 +119,8 @@
                   </div>
               </div>
               </div>
+              <?php endwhile; ?>
+          <?php endif; ?>
           </div>
                 <div class="col-xs-12 col-sm-6 col-md-6">
             <div class="container-card-most">
