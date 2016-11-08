@@ -9,3 +9,7 @@ li.cat-item.cat-item-3 {
     font-size: 1.2em;
     color: #88888;
     }
+
+   #sidebar li {
+   list-style: square;
+}

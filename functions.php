@@ -10,7 +10,8 @@ function bz_widgets_init() {
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h4 class="text-transform">',
 		'after_title'   => '</h4>',
-		'wp_list_categories' => '<ul class="category-layout',
+		'wp_list_categories' => '<ul class="category-layout>',
+		
 	) );
 }
 add_action( 'widgets_init', 'bz_widgets_init' );

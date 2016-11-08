@@ -27,7 +27,7 @@ Global Changes
 }
 }
 a {
-	color: #01a433;
+	color:;
 	text-decoration: none;
 	}
 .green {
@@ -768,12 +768,18 @@ playlist
 	background-color: #fbfbfb;
 }
 /************video page *********************/
-li .cat-item {
-    list-style-type: none;
-    margin-left: -37px;
-    font-size: 1.2em;
-    color: #88888;
-    }
+.categories ul li {
+    margin-left: -22px;
+    list-style-type: square;
+    color: purple;
+    font-size: 1.1em;
+}
+.categories a {
+    color:#888888;
+}
+.categories a:hover{
+    color: green;
+}
 .video-header {
 	background-image:url(../img/background.jpg);
 	background-size: cover;

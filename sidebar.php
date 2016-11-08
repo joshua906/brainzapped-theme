@@ -8,12 +8,10 @@
                   <?php if ( is_active_sidebar( 'sidebar-1' ) ) {?>
                     <?php dynamic_sidebar( 'sidebar-1' ); ?>  
                         <?php } else { ?>
-                    <ul class="category-layout">
-                			<li><i class="fa fa-caret-right" aria-hidden="true">
-                            <?php wp_list_categories( array(
-                                'title_li' => ''
-                            ) ); ?>
-                      </i></li>
+                    <ul id="sidebar" class="category-layout">
+                			<li><i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <?php the_category(', ') ?>
+                      </li>
                      </ul>
                     <?php } ?>
                    </div>
