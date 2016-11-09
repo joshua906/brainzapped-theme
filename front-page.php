@@ -63,11 +63,11 @@
         <div class="col-xs-12 col-sm-4 col-md-4">
             	<div class="card">
                 	<div class="bw pic">
-  						        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/resources/img/girl-blue-blue.jpg" alt="cardimg" style="width:100%"></a>
-                    	<span class="vlog-format-action small"><i class="fa fa-play"></i></span>
+  						        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                    	<!--<span class="vlog-format-action small"><i class="fa fa-play"></i></span>-->
                     </div>
   					<div class="container-card">
-                        <p class="category-text"><?php the_category(); ?></p>
+                        <p class="category-text"><?php the_category( ','); ?></p>
                         <h3><a href="#"><?php the_title(); ?></a></h3>
                         <p><?php the_excerpt(); ?></p>
                     <button class="button"><a href="<?php the_permalink(); ?>">play video</a></button>
@@ -107,7 +107,7 @@
             	<div class="row">
                 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                     	<div class="most-watched-img">
-                        	<img src="<?php echo get_template_directory_uri(); ?>/resources/img/guy-red.jpg">
+                        	<?php the_post_thumbnail(); ?>
                              
                         </div>
                     </div>
