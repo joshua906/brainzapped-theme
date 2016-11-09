@@ -17,6 +17,14 @@
     	<div class="row">
         	<div class="col-sm-12">
             	<div class="">
+            <?php if ( have_posts() ): ?>
+                <?php while ( have_posts() ) : the_post(); 
+                    wpb_set_post_views(get_the_ID());
+
+                ?>
+                   
+
+
                 	<p>CATEGORY: <?php the_category(); ?></p>
                     <p><em><?php the_author(); ?></em></p> | <p><em><?php the_date(); ?></em></p>
                     <h1><?php the_title(); ?></h1> 
@@ -24,6 +32,9 @@
                     <p><?php the_excerpt(); ?></p>
                     <p>© 2016 Brain Zapped, LLC. All Rights Reserved.
 Unauthorized copying is a violation of applicable laws.</p>
+                        
+                <?php endwhile; ?>
+            <?php endif; ?>
             </div>
         </div>
     </div>

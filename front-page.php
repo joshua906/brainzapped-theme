@@ -88,6 +88,8 @@
         </div>
     </div>
 </div>
+
+
 <!-- most watched -->
 <div class="most-watched">
 	<div class="container">
@@ -96,10 +98,11 @@
             	<h3>MOST WATCHED</h3>
             </div>
         </div>
+  </div>
+    <div class="container">
     	<div class="row">
+       <?php $popularpost = new WP_Query( array( 'posts_per_page' => 6, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) ); while ( $popularpost->have_posts() ) : $popularpost->the_post(); ?>
         	<div class="col-xs-12 col-sm-6 col-md-6">
-          <?php if ( have_posts() ): ?>
-              <?php while ( have_posts() ) : the_post(); ?>
             <div class="container-card-most">
             	<div class="row">
                 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
@@ -111,114 +114,21 @@
                 
                     <div class="col-xs-6 col-sm-6 col-m-6 col-lg-6">
                     	<div class="content">
-                    	<h6>If I knew then, what I know now</h6>
-                        <h4>Advice for Highschool Freshman </h4>
-                        <p><em>Posted by George</em></p>
+                    	<h6><?php the_category(', ') ?></h6>
+                        <h4><?php the_title(); ?> </h4>
+                        <p><em><?php the_author(); ?></em></p>
                       </div>
                         
                   </div>
               </div>
               </div>
-              <?php endwhile; ?>
-          <?php endif; ?>
-          </div>
-                <div class="col-xs-12 col-sm-6 col-md-6">
-            <div class="container-card-most">
-            	<div class="row">
-                	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    	<div class="most-watched-img">
-                        	<img src="<?php echo get_template_directory_uri(); ?>/resources/img/girl-blue.jpg">
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-m-6 col-lg-6">
-                    	
-                    	<h6>If I knew then, what I know now</h6>
-                        <h4>Advice for Highschool Freshman </h4>
-                        <p><em>Posted by George</em></p>
-                        
-                  </div>
-              </div>
-                  </div>
-                </div>
-      </div>
-                	<div class="row">
-        	<div class="col-xs-12 col-sm-6 col-md-6">
-            <div class="container-card-most">
-            	<div class="row">
-                	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    	<div class="most-watched-img">
-                        	<img src="<?php echo get_template_directory_uri(); ?>/resources/img/girl-green-background.jpg">
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    	
-                    	<h6>If I knew then, what I know now</h6>
-                        <h4>Advice for Highschool Freshman </h4>
-                        <p><em>Posted by George</em></p>
-                        
-                  </div>
-              </div>
-              </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6">
-            <div class="container-card-most">
-            	<div class="row">
-                	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    	<div class="most-watched-img">
-                        	<img src="<?php echo get_template_directory_uri(); ?>/resources/img/girl-blue-blue.jpg">
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    	
-                    	<h6>If I knew then, what I know now</h6>
-                        <h4>Advice for Highschool Freshman </h4>
-                        <p><em>Posted by George</em></p>
-                        
-                  </div>
-              </div>
-                  </div>
-                </div>
             </div>
-   	  <div class="row">
-        	<div class="col-xs-12 col-sm-6 col-md-6">
-            <div class="container-card-most">
-            	<div class="row">
-                	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    	<div class="most-watched-img">
-                        	<img src="<?php echo get_template_directory_uri(); ?>/resources/img/girl-green-background.jpg">
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    	
-                    	<h6>If I knew then, what I know now</h6>
-                        <h4>Advice for Highschool Freshman </h4>
-                        <p><em>Posted by George</em></p>
-                        
-                  </div>
-              </div>
-              </div>
+              <?php endwhile; ?>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6">
-            <div class="container-card-most">
-            	<div class="row">
-                	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    	<div class="most-watched-img">
-                        	<img src="<?php echo get_template_directory_uri(); ?>/resources/img/girl-blue-blue.jpg">
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    	
-                    	<h6>If I knew then, what I know now</h6>
-                        <h4>Advice for Highschool Freshman </h4>
-                        <p><em>Posted by George</em></p>
-                        
-                  </div>
-              </div>
-          </div>
-        </div>
-  </div>
+      </div>
 </div>
-</div>
+
+
 <!-- playlist-Name of playlist-->
 <div class="playlist">
 <div class="container">
