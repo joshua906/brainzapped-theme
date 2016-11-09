@@ -140,17 +140,22 @@
 </div>
 	<div class="container">
     	<div class="row">
+
+       <?php query_posts('category_name=brain-zapped'); ?>
+        <?php while ( have_posts() ) : the_post(); ?>
+
         	<div class="col-xs-6 col-sm-3 col-md-3">
             	<div class="card-playlist">
   					<img src="<?php echo get_template_directory_uri(); ?>/resources/img/nebula.jpg" alt="cardimg" style="width:100%">
   					<div class="container-card-playlist">
-                    <p><em>January 22,2017</em></p>
-						<h5>Dealing with peer pressure</h5>
-                      <p>We know being a freshman in high school...</p>
+                    <p><em><?php the_date(); ?></em></p>
+						<h5><?php the_title(); ?></h5>
+                      <p><?php the_excerpt(); ?></p>
   					</div>
 				</div>
             </div>
-            <div class="col-xs-6 col-sm-3 col-md-3">
+        <?php endwhile; ?>
+           <!-- <div class="col-xs-6 col-sm-3 col-md-3">
             	<div class="card-playlist">
   					<img src="<?php echo get_template_directory_uri(); ?>/resources/img/nebula.jpg" alt="cardimg" style="width:100%">
   					<div class="container-card-playlist">
@@ -188,7 +193,7 @@
     	<div class="row">
         	<div class="col-md-12">
             	<button class="button-more text-center">view all videos &#8594;</button>
-            </div>
+            </div>-->
         </div>
     </div>
 </div>

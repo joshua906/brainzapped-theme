@@ -58,6 +58,7 @@ add_action( 'widgets_init', 'bz_widgets_init' );
 		'aside', 'image', 'video', 'audio', 'quote', 'link', 'gallery',
 	) );
 	add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'video-playlist' );
 //Custom Post type
 
 function create_custom_post_types() {
