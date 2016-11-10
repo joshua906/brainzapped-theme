@@ -68,9 +68,10 @@
                     </div>
   					<div class="container-card">
                         <p class="category-text"><?php the_category( ','); ?></p>
-                        <h3><a href="#"><?php the_title(); ?></a></h3>
+                        <h2><a href="#"><?php the_title(); ?></a></h2>
                         <p><?php the_excerpt(); ?></p>
-                    <button class="button"><a href="<?php the_permalink(); ?>">play video</a></button>
+                    <button class="button"><a href="<?php the_permalink(); ?>">play video</a></button><br>
+                    <i class="fa fa-twitter" aria-hidden="true"></i><i class="fa fa-facebook" aria-hidden="true"></i>
   					</div>
 				</div>
         </div>
@@ -105,18 +106,18 @@
         	<div class="col-xs-12 col-sm-6 col-md-6">
             <div class="container-card-most">
             	<div class="row">
-                	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                	<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
                     	<div class="most-watched-img">
                         	<?php the_post_thumbnail(); ?>
                              
                         </div>
                     </div>
                 
-                    <div class="col-xs-6 col-sm-6 col-m-6 col-lg-6">
+                    <div class="col-xs-5 col-sm-5 col-m-5 col-lg-5">
                     	<div class="content">
                     	<h6><?php the_category(', ') ?></h6>
                         <h4><?php the_title(); ?> </h4>
-                        <p><em><?php the_author(); ?></em></p>
+                        <!--<p><em><?php the_author(); ?></em></p>-->
                       </div>
                         
                   </div>

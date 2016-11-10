@@ -35,7 +35,7 @@
 	  					<div class="container-card-video">
 	                    	<h5 class="light">TOPIC<?php the_category(', ') ?></h5>
 	                      
-	                        <h3><?php the_title(); ?></h3>
+	                        <h2><?php the_title(); ?></h2>
 	                        <p><?php the_excerpt(); ?></p>
 	                        <button class="button"><a href="<?php the_permalink(); ?>">play video</a></button>
 	                    </div>
@@ -53,7 +53,7 @@
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12">
-            	<button class="button-more text-center">load more videos<br> &#8595;</button>
+            	<button class="button-more text-center">load more videos</button>
             </div>
         </div>
     </div>
