@@ -18,7 +18,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2>VIDEOS-<?php the_category(', ') ?></h2>
+                <h2>VIDEOS- "<?php the_category(', ') ?>" </h2>
             </div>
         </div>
     </div>
@@ -30,14 +30,14 @@
 			<?php while ( have_posts() ) : the_post(); ?>
 	        	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 	            	<div class="card-video">
-	  					<img src="<?php echo get_template_directory_uri(); ?>/resources/img/video-pic.jpg" alt="cardimg" style="width:100%">
-	                    	<span class="vlog-format-action small"><i class="fa fa-play"></i></span>
+	  					     <?php the_post_thumbnail(); ?>
 	  					<div class="container-card-video">
-	                    	<h5 class="light">TOPIC<?php the_category(); ?></h5>
+	                    	<h5 class="category-text"><?php the_category(','); ?></h5>
 	                      
 	                        <h3><?php the_title(); ?></h3>
 	                        <p><?php the_excerpt(); ?></p>
-	                        <button class="button"><a href="<?php the_permalink(); ?>">play video</a></button>
+	                        <button class="button"><a href="<?php the_permalink(); ?>">play video</a></button><br>
+                            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i><i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
 	                    </div>
 	                 </div>
 	            </div>

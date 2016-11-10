@@ -9,6 +9,7 @@ Global Changes
 .text-transform {
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
 }
 .container-single {
     padding-right: 15px;
@@ -27,7 +28,7 @@ Global Changes
 }
 }
 a {
-	color:;
+	color: rgb(17,17,17);
 	text-decoration: none;
 	}
 .green {
@@ -617,7 +618,7 @@ img {
 	margin-bottom: 30px;
 }
 .container-card-video {
-    padding: 10px 55px;
+    padding: 30px 55px;
     background-color: #fbfbfb;
     margin-bottom: 30px;
 }
@@ -855,7 +856,9 @@ playlist
     line-height: 22px;
 }
 .fa {
-	padding-right: 9px;
+	padding-right: 14px;
+    font-size: 1.6em;
+    padding-bottom: 5px;
 }
 .fa-caret-right {
 	color: purple;
@@ -902,7 +905,7 @@ playlist
 }
 }
 .video-list h2 {
-	color:purple;
+	color:rgb(17,17,17);
 	}
 .card-video {
 	width: 100%;
