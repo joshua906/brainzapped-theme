@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat: 400,700" rel="stylesheet">
  <link href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' type='text/css' />
  <?php wp_head(); ?>
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" 
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" >
  <script src="<?php echo get_template_directory_uri(); ?>/resources/scripts/bz.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
