@@ -1,15 +1,5 @@
 <?php get_header(); ?>
 
-<!-- the title -->
-<div class="title">
-    <div class="container-single">
-        <div class="row">
-            <div class="col-md-12">
-                <h1><?php the_title(); ?></h1> 
-            </div>
-        </div>
-    </div>
-</div>
 <!-- video above post-->
 <div class="iframe-video">
 	<div class="container-single">
@@ -31,14 +21,12 @@
                     wpb_set_post_views(get_the_ID());
 
                 ?>
-                   
-
-
-                	<p>CATEGORY: <?php the_category(); ?></p>
-                    <p><em><?php the_author(); ?></em></p> | <p><em><?php the_date(); ?></em></p>
+                
+                	<h2 class="category-text"> <?php the_category(','); ?></h2>
+                    <p><em>Posted By: <?php the_author(); ?> | <?php the_date(); ?></em></p>
                     <h1><?php the_title(); ?></h1> 
                 </div>
-                    <p><?php the_excerpt(); ?></p>
+                    <p><?php the_content(); ?></p>
                     <p>© 2016 Brain Zapped, LLC. All Rights Reserved.
 Unauthorized copying is a violation of applicable laws.</p>
                         
@@ -61,30 +49,32 @@ Unauthorized copying is a violation of applicable laws.</p>
 <!-- latest videos-->
 
 <div class="just-added">
-	<div class="container-single">
+    <div class="container-single">
     <div class="row">
-   	  <div class="col-md-12">
-        	<h3>LATEST VIDEOS</h3>
+      <div class="col-md-12">
+            <h3>LATEST VIDEOS</h3>
         </div>
     </div>
     </div>
     <div class="container-single">
-    	<div class="row">
+        <div class="row">
 
     <?php query_posts('posts_per_page=2'); ?>
          <?php while ( have_posts() ) : the_post(); ?>
         <div class="col-xs-12 col-sm-6 col-md-6">
-            	<div class="card">
-                	<div class="bw pic">
-                        <?php the_post_thumbnail(); ?>
+                <div class="card">
+                    <div class="bw pic">
+                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                        <!--<span class="vlog-format-action small"><i class="fa fa-play"></i></span>-->
                     </div>
-  					<div class="container-card">
-                        <p class="category-text"><?php the_category(','); ?></p>
-                        <h3><a href="#"><?php the_title(); ?></a></h3>
+                    <div class="container-card">
+                        <p class="category-text"><?php the_category( ','); ?></p>
+                        <h2><a href="#"><?php the_title(); ?></a></h2>
                         <p><?php the_excerpt(); ?></p>
-                    <button class="button"><a href="<?php the_permalink(); ?>">play video</a></button>
-  					</div>
-				</div>
+                    <button class="button"><a href="<?php the_permalink(); ?>">play video</a></button><br>
+                    <i class="fa fa-twitter" aria-hidden="true"></i><i class="fa fa-facebook" aria-hidden="true"></i>
+                    </div>
+                </div>
         </div>
              <?php endwhile; ?> 
     <?php wp_reset_query(); ?>
