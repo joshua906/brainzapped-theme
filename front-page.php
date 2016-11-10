@@ -21,8 +21,8 @@
 	<div class="container">
     	<div class="row">
         	<div class="col-xs-12 col-sm-6 col-m-7 col-lg-7">
-            	<div class="banner  bg-secondary">
-                <div class="clear-fix banner_wrap banner-content">
+            	<div class="">
+                <div class="">
             		<h4>Welcome to <br><span class="headline">Brain Zapped!</span></h4>
                 	<p>Get Brain Zapped! We create educational, inspiring, and entertaining videos for kids, ages 6 to 99. Get zapped with info about everything from science to school life, to just  being awesome. We want to help you be the best you, you can be! </p>
                 	<p>Our Brain Zapped Science series is designed with educators and students in mind. Each video is crafted to address curriculum standards while infusing a fun burst of knowledge into the ol' noggin. Educators can use them to kickstart topics or just get BRAIN ZAPPED for the fun of it. </p>
@@ -30,8 +30,8 @@
                 </div>
             </div>
               <div class="col-xs-12 col-sm-6 col-m-5 col-lg-5">
-            	<div class="banner bg-secondary">
-                	<div class=" banner_wrap banner-content">
+            	<div class="">
+                	<div class="">
                     <h1>What teachers have to say</h1>
 						<p>Completely re-engineer go forward platforms and fully tested process improvements. Professionally mesh quality synergy via diverse potentialities. Competently benchmarkEfficiently maintain extensible web services with inexpensive ....</p>
                         <p><em>john Doe</em></p>
@@ -128,7 +128,15 @@
         </div>
       </div>
 </div>
-
+<div class="more-button">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <button class="button-more text-center">view all videos &#8594;</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- playlist-Name of playlist-->
 <div class="playlist">

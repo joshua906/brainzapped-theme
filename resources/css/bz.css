@@ -12,9 +12,10 @@ Global Changes
     text-align: center;
 }
 .headline {
-    padding: 10px 0px 0px 0px;
+    padding: 15px 0px;
     font-size: 2.4em;
     text-transform: uppercase;
+    color:#21ba39;
 }
 .container-single {
     padding-right: 15px;
@@ -462,8 +463,8 @@ video {
 /*------------------
 	about section 
 ---------------*/
-.about {
-	padding-top: 40px;
+.about p {
+    color: #fff;
 }
 /* Slideshow container */
 .slideshow-container {
@@ -566,6 +567,7 @@ top:0;
 .just-added h3 {
     padding-bottom: 40px;
     text-align: left;
+    padding-top: 30px;
 }
 .just-added h2 {
     padding-bottom: 5px;

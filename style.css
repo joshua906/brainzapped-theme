@@ -1,15 +1,7 @@
-.text-transform {
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
-li.cat-item.cat-item-3 {
-    list-style-type: none;
-    margin-left: -37px;
-    font-size: 1.2em;
-    color: #88888;
-    }
-
-   #sidebar li {
-   list-style: square;
+.about {
+	background-image: url(../brainzapped-theme/resources/img/about-pic.jpg);
+	background-attachment: fixed;
+	background-size:cover;
+	padding: 50px;
+	color: #21ba39;
 }
