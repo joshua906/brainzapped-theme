@@ -80,10 +80,29 @@ function create_custom_post_types() {
 				),
 			)
 		);
+
+	register_post_type('products_page',
+		array(
+			'labels' => array(
+				'name' => _('Product Page'),
+				'singular_name' => _('Product Page')
+				),
+			'public'=> true,
+			'has_archive' => false,
+			'show_in_nav_menus' => true,
+			'rewrite' => array(
+				'slug' => 'products-page'
+				),
+			)
+		);
 }
 
 add_action('init', 'create_custom_post_types');
 
+
+
+
+///menu
 
 add_theme_support('menus');
 
