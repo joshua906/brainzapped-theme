@@ -59,7 +59,7 @@ Unauthorized copying is a violation of applicable laws.</p>
     <div class="container-single">
         <div class="row">
 
-    <?php query_posts('posts_per_page=2'); ?>
+    <?php query_posts('posts_per_page=4'); ?>
          <?php while ( have_posts() ) : the_post(); ?>
         <div class="col-xs-12 col-sm-6 col-md-6">
                 <div class="card">

@@ -466,6 +466,7 @@ video {
 .about p {
     color: #fff;
 }
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -636,6 +637,7 @@ img {
 	}
 .category-text a {
     color:purple;
+    font-size: 1.3em;
 }
 .vlog-format-action.small {
     height: 80px;

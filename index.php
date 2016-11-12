@@ -41,7 +41,20 @@
 	                    </div>
 	                 </div>
 	            </div>
-            <?php endwhile; ?>
+            <?php endwhile; 
+
+            	the_posts_pagination(
+
+            		array(
+
+            			'mid_text' => '2',
+            			'prev_text' => 'previous',
+            			'next_text' => 'next',
+
+            		)
+            	);
+
+            ?>
 			<?php endif; ?>
         </div>
     </div>
@@ -49,6 +62,8 @@
 
 <!-- pagination -->
 
+
+<!--
 <div class="more-button">
 	<div class="container">
     	<div class="row">
@@ -58,7 +73,7 @@
         </div>
     </div>
 </div>
-
+-->
 
 
 <?php get_footer(); ?>
