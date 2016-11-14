@@ -44,6 +44,9 @@ color:#fff;
 .ms-item {
 width: 50%;
 }
+.ms-item-small {
+width: 33%;
+}
 
 /* Makes three columns */
 

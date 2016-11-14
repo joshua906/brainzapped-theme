@@ -52,25 +52,25 @@ Unauthorized copying is a violation of applicable laws.</p>
     <div class="container-single">
     <div class="row">
       <div class="col-md-12">
-            <h3>LATEST VIDEOS</h3>
+            <h3>MORE VIDEOS</h3>
         </div>
     </div>
     </div>
     <div class="container-single">
-        <div class="row">
+        <div class="row" id="ms-container">
 
-    <?php query_posts('posts_per_page=4'); ?>
+    <?php query_posts('posts_per_page=5'); ?>
          <?php while ( have_posts() ) : the_post(); ?>
-        <div class="col-xs-12 col-sm-6 col-md-6">
+        <div class="ms-item-small col-xs-12 col-sm-4 col-md-4 col-lg-4">
                 <div class="card">
                     <div class="bw pic">
                                 <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
                         <!--<span class="vlog-format-action small"><i class="fa fa-play"></i></span>-->
                     </div>
                     <div class="container-card">
-                        <p class="category-text"><?php the_category( ','); ?></p>
-                        <h2><a href="#"><?php the_title(); ?></a></h2>
-                        <p><?php the_excerpt(); ?></p>
+                        <p class="category-text-small"><?php the_category( ','); ?></p>
+                        <h5><a href="#"><?php the_title(); ?></a></h5>
+                        <p><?php echo wp_trim_words( get_the_content(), 7, '...' ); ?></p>
                     <button class="button"><a href="<?php the_permalink(); ?>">play video</a></button><br>
                     <i class="fa fa-twitter" aria-hidden="true"></i><i class="fa fa-facebook" aria-hidden="true"></i>
                     </div>
@@ -81,4 +81,28 @@ Unauthorized copying is a violation of applicable laws.</p>
         </div>
     </div>
 </div>
+<div class="more-button">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <button class="button-more text-center">&#8592;back to videos</button>
+            </div>
+        </div>
+    </div>
+</div>
+ <script>
+        
+        jQuery(window).load(function() {
+        
+      // MASSONRY Without jquery
+      var container = document.querySelector('#ms-container');
+      var msnry = new Masonry( container, {
+        itemSelector: '.ms-item-small',
+        columnWidth: '.ms-item-small',                
+      });  
+      
+        });
+
+      
+    </script>
 <?php get_footer(); ?>

@@ -103,7 +103,7 @@
     <div class="container">
     	<div class="row">
        <?php $popularpost = new WP_Query( array( 'posts_per_page' => 6, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) ); while ( $popularpost->have_posts() ) : $popularpost->the_post(); ?>
-        	<div class="col-xs-12 col-sm-6 col-md-6">
+        	<div class="col-xs-12 col-sm-12 col-md-12">
             <div class="container-card-most">
             	<div class="row">
                 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
@@ -115,7 +115,7 @@
                 
                     <div class="col-xs-6 col-sm-6 col-m-6 col-lg-6">
                     	<div class="content">
-                    	<h6><?php the_category(', ') ?></h6>
+                    	<p class="category-text-small"><?php the_category(', ') ?></p>
                         <h4><?php the_title(); ?> </h4>
                         <!--<p><em><?php the_author(); ?></em></p>-->
                       </div>
