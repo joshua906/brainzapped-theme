@@ -36,3 +36,19 @@ padding:6px 9px 5px 9px;
 background: #3279BB;
 color:#fff;
 }
+
+
+/*********masonry style***********/
+
+/* Makes two columns */
+.ms-item {
+width: 50%;
+}
+
+/* Makes three columns */
+
+@media only screen and (max-width: 500px) {
+	.ms-item{
+		width: 100%;
+	}
+}

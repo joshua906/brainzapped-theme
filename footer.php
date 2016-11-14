@@ -26,10 +26,12 @@
         </div>
     </div>
 </div>
+
 <script>
   $('.type-it').typeIt({
     strings: ['Headline Text will go here', 'And anything else we want to add!']
   }); 
+
 </script>
 
 </body>

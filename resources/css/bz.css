@@ -834,8 +834,12 @@ playlist
 .video-title {
 	padding-bottom: 30px;
 }
+.video-title h2 {
+
+}
 .video-list {
 	margin: 0px 0px;
+    padding-bottom:8em;
 }
 .video-list h3 {
 	text-align: left;
