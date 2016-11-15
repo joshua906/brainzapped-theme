@@ -7,34 +7,32 @@
 }
 
 /***********pagination*****************/
-.pagination {
-clear:both;
-padding:20px 10px;
-position:relative;
-font-size:11px;
-line-height:13px;
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+	color: #fff;
+	text-decoration:none;
 }
- 
-.pagination span, .pagination a {
-display:block;
-float:left;
-margin: 2px 2px 2px 0;
-padding:6px 9px 5px 9px;
-text-decoration:none;
-width:auto;
-color:#fff;
-background: purple;
+
+.navigation li {
+	display: inline-block;
 }
- 
-.pagination a:hover{
-color:#fff;
-background: #3279BB;
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+    background-color: purple;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 12px;
+    padding: 0.75rem;
 }
- 
-.pagination .current{
-padding:6px 9px 5px 9px;
-background: #3279BB;
-color:#fff;
+
+.navigation li a:hover,
+.navigation li.active a {
+	background-color: green;
 }
 
 

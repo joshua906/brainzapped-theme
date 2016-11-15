@@ -46,19 +46,10 @@
 	           
             <?php endwhile; 
 
-            	the_posts_pagination(
-
-            		array(
-
-            			'mid_text' => '2',
-            			'prev_text' => 'previous',
-            			'next_text' => 'next',
-
-            		)
-            	);
-
             ?>
-			<?php endif; ?>
+			<?php endif; 
+
+			?>
         </div>
     </div>
 </div>
@@ -66,17 +57,17 @@
 <!-- pagination -->
 
 
-<!--
-<div class="more-button">
+
+<div class="">
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12">
-            	<button class="button-more text-center">load more videos</button>
+            	<?php wpbeginner_numeric_posts_nav(); ?>
             </div>
         </div>
     </div>
 </div>
--->
+
  <script>
         
         jQuery(window).load(function() {
