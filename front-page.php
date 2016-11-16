@@ -68,7 +68,7 @@
                     </div>
   					<div class="container-card">
                         <p class="category-text"><?php the_category( ','); ?></p>
-                        <h2><a href="#"><?php the_title(); ?></a></h2>
+                        <h4><a href="#"><?php the_title(); ?></a></h4>
                         <p><?php echo wp_trim_words( get_the_content(), 12, '...' ); ?></p>
                     <button class="button"><a href="<?php the_permalink(); ?>">play video</a></button><br>
                     <i class="fa fa-twitter" aria-hidden="true"></i><i class="fa fa-facebook" aria-hidden="true"></i>
@@ -102,7 +102,7 @@
   </div>
     <div class="container">
     	<div class="row">
-       <?php $popularpost = new WP_Query( array( 'posts_per_page' => 6, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) ); while ( $popularpost->have_posts() ) : $popularpost->the_post(); ?>
+       <?php $popularpost = new WP_Query( array( 'posts_per_page' => 3, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) ); while ( $popularpost->have_posts() ) : $popularpost->the_post(); ?>
         	<div class="col-xs-12 col-sm-12 col-md-12">
             <div class="container-card-most">
             	<div class="row">
@@ -143,17 +143,17 @@
 <div class="container">
 	<div class="row">
     	<div class="col-md-12">
-        	<h3>PlAYLIST- "NAME OF PLAYLIST"</h3>
+        	<h3>PLAYLIST- "Brain Zapped Volume 1"</h3>
         </div>
     </div>
 </div>
 	<div class="container">
-    	<div class="row">
+    	<div class="row" id="ms-container">
 
        <?php query_posts('category_name=brain-zapped'); ?>
         <?php while ( have_posts() ) : the_post(); ?>
 
-        	<div class="col-xs-6 col-sm-3 col-md-3">
+        	<div class="ms-item col-xs-6 col-sm-3 col-md-3">
             	<div class="card-playlist">
   					 <?php the_post_thumbnail(); ?>
   					<div class="container-card-playlist">
@@ -178,5 +178,19 @@
     </div>
 </div>
 
+ <script>
+        
+        jQuery(window).load(function() {
+        
+      // MASSONRY Without jquery
+      var container = document.querySelector('#ms-container');
+      var msnry = new Masonry( container, {
+        itemSelector: '.ms-item',
+        columnWidth: '.ms-item',                
+      });  
+      
+        });
 
+      
+    </script>
 <?php get_footer(); ?>

@@ -34,8 +34,32 @@
 .navigation li.active a {
 	background-color: green;
 }
+/***************slide show*******************/
 
+/* Slideshow container */
+.slider {
+  height: 18px;
+  font-size: 16px;
+  overflow: hidden;
+  background-color: lightgrey;
+}
 
+.slider div, .slider div p {
+  margin: 0;
+  padding: 0;
+}
+
+.slider div {
+  animation: slide 10s 2s infinite;
+}
+
+@keyframes slide {
+  0% { margin-top: 0; }
+  25% { margin-top: -18px; }
+  50% { margin-top: -36px; }
+  75% { margin-top: -54px; }
+  100% { margin-top: 0; }
+}
 /*********masonry style***********/
 
 /* Makes two columns */

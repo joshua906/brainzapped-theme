@@ -12,6 +12,8 @@
         </div>
     </div>
  </div>
+
+
  <?php get_sidebar(); ?>
 <!-- video list -->
 <div class="video-title">
@@ -36,7 +38,7 @@
 	  					<div class="container-card-video">
 	                    	<h4 class="category-text"><?php the_category(', ') ?></h4>
 	                      
-	                        <h2><?php the_title(); ?></h2>
+	                        <h4><?php the_title(); ?></h4>
 	                        <p><?php the_excerpt(); ?></p>
 	                        <button class="button"><a href="<?php the_permalink(); ?>">play video</a></button><br>
 	                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i><i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
@@ -81,7 +83,24 @@
       
         });
 
-      
+
+ var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
     </script>
 
 <?php get_footer(); ?>
