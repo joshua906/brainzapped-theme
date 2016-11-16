@@ -59,9 +59,9 @@ Unauthorized copying is a violation of applicable laws.</p>
     <div class="container-single">
         <div class="row" id="ms-container">
 
-    <?php query_posts('posts_per_page=5'); ?>
+    <?php query_posts('posts_per_page=4'); ?>
          <?php while ( have_posts() ) : the_post(); ?>
-        <div class="ms-item-small col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <div class="ms-item col-xs-12 col-sm-6 col-md-6 col-lg-6">
                 <div class="card">
                     <div class="bw pic">
                                 <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
@@ -70,7 +70,7 @@ Unauthorized copying is a violation of applicable laws.</p>
                     <div class="container-card">
                         <p class="category-text-small"><?php the_category( ','); ?></p>
                         <h5><a href="#"><?php the_title(); ?></a></h5>
-                        <p><?php echo wp_trim_words( get_the_content(), 7, '...' ); ?></p>
+                        <!--<p><?php echo wp_trim_words( get_the_content(), 7, '...' ); ?></p>-->
                     <button class="button"><a href="<?php the_permalink(); ?>">play video</a></button><br>
                     <i class="fa fa-twitter" aria-hidden="true"></i><i class="fa fa-facebook" aria-hidden="true"></i>
                     </div>

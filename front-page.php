@@ -118,6 +118,7 @@
                     	<p class="category-text-small"><?php the_category(', ') ?></p>
                         <h4><?php the_title(); ?> </h4>
                         <!--<p><em><?php the_author(); ?></em></p>-->
+                        <p><?php echo wp_trim_words( get_the_content(), 12, '...' ); ?></p>
                       </div>
                         
                   </div>
@@ -143,7 +144,7 @@
 <div class="container">
 	<div class="row">
     	<div class="col-md-12">
-        	<h3>PLAYLIST- "Brain Zapped Volume 1"</h3>
+        	<h3>PLAYLIST- "BRAIN ZAPPED VOLUME 1"</h3>
         </div>
     </div>
 </div>
@@ -152,17 +153,18 @@
 
        <?php query_posts('category_name=brain-zapped'); ?>
         <?php while ( have_posts() ) : the_post(); ?>
-
+          <a href="<?php the_permalink(); ?>">
         	<div class="ms-item col-xs-6 col-sm-3 col-md-3">
             	<div class="card-playlist">
   					 <?php the_post_thumbnail(); ?>
   					<div class="container-card-playlist">
                     <p><em><?php the_date(); ?></em></p>
-						<h5><?php the_title(); ?></h5>
+						<h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
                       <p><?php echo wp_trim_words( get_the_content(), 6, '...' ); ?></p>
   					</div>
 				</div>
             </div>
+            </a>
         <?php endwhile; ?>
         </div>
     </div>
