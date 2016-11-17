@@ -115,10 +115,14 @@
                 
                     <div class="col-xs-6 col-sm-6 col-m-6 col-lg-6">
                     	<div class="content">
-                    	<p class="category-text-small"><?php the_category(', ') ?></p>
-                        <h4><?php the_title(); ?> </h4>
+                    	<p class="category-text"><?php the_category(', ') ?></p>
+                        <h3><?php the_title(); ?> </h3>
+                        <p><em><?php the_date(); ?> | <?php the_author(); ?></em></p> 
                         <!--<p><em><?php the_author(); ?></em></p>-->
-                        <p><?php echo wp_trim_words( get_the_content(), 12, '...' ); ?></p>
+                        <p><?php echo wp_trim_words( get_the_content(), 15, '...' ); ?></p>
+
+                         <i class="fa fa-twitter" aria-hidden="true"></i><i class="fa fa-facebook" aria-hidden="true"></i>
+
                       </div>
                         
                   </div>
@@ -159,8 +163,8 @@
   					 <?php the_post_thumbnail(); ?>
   					<div class="container-card-playlist">
                     <p><em><?php the_date(); ?></em></p>
-						<h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-                      <p><?php echo wp_trim_words( get_the_content(), 6, '...' ); ?></p>
+						<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                      <p><?php echo wp_trim_words( get_the_content(), 14, '...' ); ?></p>
   					</div>
 				</div>
             </div>

@@ -36,6 +36,21 @@ Unauthorized copying is a violation of applicable laws.</p>
         </div>
     </div>
 </div>
+<!-- share the post area -->
+    <div class="container-single">
+     <div class="banner  bg-secondary">
+        <div class="clear-fix banner_wrap banner-content">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Share this post:</h5>
+                </div>
+                <div class="col-md-6 text-right">
+                    <i class="fa fa-twitter" aria-hidden="true"></i><i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 <!-- back button -->
 <div class="more-button">
 	<div class="container">

@@ -544,7 +544,8 @@ img {
 	}
 .category-text a {
     color:purple;
-    font-size: 1.3em;
+    font-size: 1.1em;
+    font-family: 'Raleway',sans-serif;
 }
 .category-text-small a {
     color:purple;
@@ -628,7 +629,13 @@ img {
 	padding-bottom: 20px;
 	padding-top: 30px;
 	}
-	
+.most-watched .content h3 {
+    padding: 0px;
+}	
+.most-watched .content {
+    padding-top: 30px;
+    padding-right: 30px;
+}
 .most-watched-img {
     position: relative;
 }
