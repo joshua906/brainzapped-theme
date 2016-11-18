@@ -70,7 +70,7 @@
                         <p class="category-text"><?php the_category( ','); ?></p>
                         <h4><a href="#"><?php the_title(); ?></a></h4>
                         <p><?php echo wp_trim_words( get_the_content(), 12, '...' ); ?></p>
-                    <button class="button"><a href="<?php the_permalink(); ?>">play video</a></button><br>
+                    <a href="<?php the_permalink(); ?>"><button class="button">play video</button></a><br>
                     <i class="fa fa-twitter" aria-hidden="true"></i><i class="fa fa-facebook" aria-hidden="true"></i>
   					</div>
 				</div>
@@ -121,7 +121,9 @@
                         <!--<p><em><?php the_author(); ?></em></p>-->
                         <p><?php echo wp_trim_words( get_the_content(), 15, '...' ); ?></p>
 
-                         <i class="fa fa-twitter" aria-hidden="true"></i><i class="fa fa-facebook" aria-hidden="true"></i>
+                        <h6><a href="#">play video</a></h6>
+
+                        
 
                       </div>
                         
@@ -158,7 +160,7 @@
        <?php query_posts('category_name=brain-zapped'); ?>
         <?php while ( have_posts() ) : the_post(); ?>
           <a href="<?php the_permalink(); ?>">
-        	<div class="ms-item col-xs-6 col-sm-3 col-md-3">
+        	<div class="ms-item col-xs-6 col-sm-6 col-md-6">
             	<div class="card-playlist">
   					 <?php the_post_thumbnail(); ?>
   					<div class="container-card-playlist">

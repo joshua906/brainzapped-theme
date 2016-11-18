@@ -193,11 +193,9 @@ add_action('wp_enqueue_scripts', 'bz_theme_styles');
 
 
 function bz_js() {
-	wp_enqueue_script('jquery');
+	
 	wp_enqueue_script( 'masonry' );
 	wp_enqueue_script( 'masonry', '//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.js' );
-	/*wp_enqueue_scripts('bootstrap_min', get_template_directory_uri() . '/js/bootstrap.min.js');
-	wp_enqueue_scripts('bootstrap_js', get_template_directory_uri() . '/js/bootstrap.js');-->*/
 }
 
 add_action('wp_enqueue_scripts', 'bz_js');

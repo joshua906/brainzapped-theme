@@ -93,19 +93,13 @@ p {
     margin: 14px 0px;
     cursor: pointer;
     margin-bottom: 22px;
-    width: 60%;
+    width: 45%;
     border-radius: 0px;
 	padding: 14px 0px;
     font-family: 'Montserrat', sans-serif;
     color: purple;
 }
-.button a {
-    color: purple;
-}
-.button a:hover {
-    color: #fff;
-    text-decoration:none;
-}
+
 .button:hover {
     background-color:#01a433;
 	border:1px solid #01a433;
@@ -117,7 +111,7 @@ p {
     margin: 14px 0px;
     cursor: pointer;
     margin-bottom: 22px;
-    width: 60%;
+    width: 45%;
     border-radius: 0px;
 	font-family: 'Montserrat', sans-serif;
 	transition-duration: .8s ease-in-out;

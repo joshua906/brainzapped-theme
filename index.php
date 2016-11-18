@@ -40,7 +40,7 @@
 	                      
 	                        <h4><?php the_title(); ?></h4>
 	                        <p><?php the_excerpt(); ?></p>
-	                        <button class="button"><a href="<?php the_permalink(); ?>">play video</a></button><br>
+	                        <a href="<?php the_permalink(); ?>"><button class="button">play video</button></a><br>
 	                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i><i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
 	                    </div>
 	                 </div>
