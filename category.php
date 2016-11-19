@@ -25,10 +25,10 @@
 </div>
 <div class="video-list">
 	<div class="container">
-    	<div class="row">
+    	<div class="row" id="ms-container">
     		<?php if ( have_posts() ): ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-	        	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+	        	<div class="ms-item col-xs-12 col-sm-6 col-md-6 col-lg-6">
 	            	<div class="card-video">
 	  					     <?php the_post_thumbnail(); ?>
 	  					<div class="container-card-video">
@@ -36,7 +36,7 @@
 	                      
 	                        <h3><?php the_title(); ?></h3>
 	                        <p><?php the_excerpt(); ?></p>
-	                        <button class="button"><a href="<?php the_permalink(); ?>">play video</a></button><br>
+	                         <a href="<?php the_permalink(); ?>"><button class="button">play video</button></a><br>
                             <i class="fa fa-twitter fa-2x" aria-hidden="true"></i><i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
 	                    </div>
 	                 </div>
@@ -47,4 +47,19 @@
     </div>
 </div>
 
+ <script>
+        
+        jQuery(window).load(function() {
+        
+      // MASSONRY Without jquery
+      var container = document.querySelector('#ms-container');
+      var msnry = new Masonry( container, {
+        itemSelector: '.ms-item',
+        columnWidth: '.ms-item',                
+      });  
+      
+        });
+
+      
+    </script>
 <?php get_footer(); ?>

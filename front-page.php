@@ -84,7 +84,7 @@
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12">
-            	<button class="button-more text-center">view all videos &#8594;</button>
+            	<a href="<?php echo get_template_directory_uri(); ?>/bzs/wordpress/videos"><button class="button-more text-center">view all videos &#8594;</button></a>
             </div>
         </div>
     </div>
@@ -107,10 +107,12 @@
             <div class="container-card-most">
             	<div class="row">
                 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="bw pic">
                     	<div class="most-watched-img">
                         	<?php the_post_thumbnail(); ?>
                              
                         </div>
+                    </div>
                     </div>
                 
                     <div class="col-xs-6 col-sm-6 col-m-6 col-lg-6">
@@ -121,7 +123,7 @@
                         <!--<p><em><?php the_author(); ?></em></p>-->
                         <p><?php echo wp_trim_words( get_the_content(), 15, '...' ); ?></p>
 
-                        <h6><a href="#">play video</a></h6>
+                        <h6><a href="<?php the_permalink(); ?>">play video</a></h6>
 
                         
 
@@ -159,7 +161,7 @@
 
        <?php query_posts('category_name=brain-zapped'); ?>
         <?php while ( have_posts() ) : the_post(); ?>
-          <a href="<?php the_permalink(); ?>">
+          
         	<div class="ms-item col-xs-6 col-sm-6 col-md-6">
             	<div class="card-playlist">
   					 <?php the_post_thumbnail(); ?>
@@ -170,7 +172,7 @@
   					</div>
 				</div>
             </div>
-            </a>
+            
         <?php endwhile; ?>
         </div>
     </div>

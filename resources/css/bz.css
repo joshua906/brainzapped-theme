@@ -731,7 +731,8 @@ playlist
     color:#888888;
 }
 .categories a:hover{
-    color: green;
+    color: #01a433;
+    text-decoration: none;
 }
 .video-header {
 	background-image:url(../img/background.jpg);
