@@ -118,10 +118,10 @@
                     <div class="col-xs-6 col-sm-6 col-m-6 col-lg-6">
                     	<div class="content">
                     	<p class="category-text"><?php the_category(', ') ?></p>
-                        <h3><?php the_title(); ?> </h3>
+                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?> </a></h3>
                         <p><em><?php the_date(); ?> | <?php the_author(); ?></em></p> 
                         <!--<p><em><?php the_author(); ?></em></p>-->
-                        <p><?php echo wp_trim_words( get_the_content(), 15, '...' ); ?></p>
+                        <p class="paragraph"><?php echo wp_trim_words( get_the_content(), 15, '...' ); ?></p>
 
                         <h6><a href="<?php the_permalink(); ?>">play video</a></h6>
 
@@ -141,7 +141,7 @@
   <div class="container">
       <div class="row">
           <div class="col-md-12">
-              <button class="button-more text-center">view all videos &#8594;</button>
+              <a href="<?php echo get_template_directory_uri(); ?>/bzs/wordpress/videos"><button class="button-more text-center">view all videos &#8594;</button></a>
             </div>
         </div>
     </div>
@@ -182,7 +182,7 @@
   <div class="container">
       <div class="row">
           <div class="col-md-12">
-              <button class="button-more text-center">view all videos &#8594;</button>
+             <a href="<?php echo get_template_directory_uri(); ?>/bzs/wordpress/videos"><button class="button-more text-center">view all videos &#8594;</button></a>
             </div>
         </div>
     </div>

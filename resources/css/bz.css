@@ -618,6 +618,9 @@ img {
 	/*----------------
 	most watched 
 	------------------*/
+.most-watched {
+    margin-bottom: 25px;
+}
 .most-watched h3 {
 	text-align: left;
 	padding-bottom: 20px;
@@ -657,7 +660,18 @@ img {
     color: purple;
     text-transform: uppercase;
 }
-
+@media only screen and (max-width:991px){
+.most-watched .paragraph {
+    display: none;
+}
+.most-watched p em {
+    display: none;
+}
+.most-watched .content {
+    padding-top: 20px;
+    padding-right: 30px;
+}
+}
 /*----------------------------
 footer
 ----------*/
@@ -753,7 +767,7 @@ playlist
 }
 .video-list {
 	margin: 0px 0px;
-    padding-bottom:8em;
+    padding-bottom:2em;
 }
 .video-list h3 {
 	text-align: left;
