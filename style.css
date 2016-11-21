@@ -27,7 +27,7 @@
     border-radius: 0px;
     cursor: pointer;
     padding: 12px;
-    padding: 0.75rem;
+    padding: 0.9rem;
 }
 
 .navigation li a:hover,
@@ -36,29 +36,98 @@
 }
 /***************slide show*******************/
 
+.jumbotron{
+    height: 450px;
+    overflow: hidden;
+}
+* {box-sizing:border-box}
+
+.mySlides {
+  display:none;
+}
+
 /* Slideshow container */
-.slider {
-  height: 18px;
-  font-size: 16px;
-  overflow: hidden;
-  background-color: lightgrey;
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
 }
 
-.slider div, .slider div p {
-  margin: 0;
-  padding: 0;
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 25%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
 }
 
-.slider div {
-  animation: slide 10s 2s infinite;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-@keyframes slide {
-  0% { margin-top: 0; }
-  25% { margin-top: -18px; }
-  50% { margin-top: -36px; }
-  75% { margin-top: -54px; }
-  100% { margin-top: 0; }
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #000;
+  font-size: 15px;
+  padding: 125px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
 /*********masonry style***********/
 

@@ -9,6 +9,41 @@
         </div>
     </div>
 </div>
+<!-- slide show for products -->
+<div class="jumbotron">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="https://images.pexels.com/photos/132945/pexels-photo-132945.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" style="width:100%; background-size: cover; ">
+  <div class="text">
+  <h2>headline text here</h2>
+        <p>this is the messeage for the headline text</p>
+        </div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="https://images.pexels.com/photos/51953/mother-daughter-love-sunset-51953.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" style="width:100%">
+  <div class="text">
+        <h2>headline text here</h2>
+        <p>this is the messeage for the headline text</p>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <img src="https://images.pexels.com/photos/132945/pexels-photo-132945.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" style="width:100%">
+  <div class="text">
+  <h2>headline text here</h2>
+        <p>this is the messeage for the headline text</p>
+        </div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+</div>
 <!-- Product -->
 <div class="products">
     <div class="container">
