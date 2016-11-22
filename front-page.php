@@ -20,7 +20,7 @@
 <div class="about">
 	<div class="container">
     	<div class="row">
-        	<div class="col-xs-12 col-sm-6 col-m-7 col-lg-7">
+        	<div class="col-xs-12 col-sm-12 col-m-12 col-lg-12">
             	<div class="">
                 <div class="">
             		<h4>Welcome to <br><span class="headline">Brain Zapped!</span></h4>
@@ -29,17 +29,6 @@
                 </div>
                 </div>
             </div>
-              <div class="col-xs-12 col-sm-6 col-m-5 col-lg-5">
-            	<div class="">
-                	<div class="">
-                    <h1>What teachers have to say</h1>
-						<p>Completely re-engineer go forward platforms and fully tested process improvements. Professionally mesh quality synergy via diverse potentialities. Competently benchmarkEfficiently maintain extensible web services with inexpensive ....</p>
-                        <p><em>john Doe</em></p>
-
-</div>     
-                        
-                </div>
-          </div>
       </div>
   </div>
 </div>

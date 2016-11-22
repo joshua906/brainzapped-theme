@@ -4,44 +4,54 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Brain Zapped Products</h1>
+                <h1>Brain Zapped Products & Reviews</h1>
             </div>
         </div>
     </div>
 </div>
 <!-- slide show for products -->
-<div class="jumbotron">
+<div class="">
 <div class="slideshow-container">
 
-<div class="mySlides fade">
-  
-  <img src="https://images.pexels.com/photos/132945/pexels-photo-132945.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" style="width:100%; background-size: cover; ">
-  <div class="text">
-  <h2>headline text here</h2>
-        <p>this is the messeage for the headline text</p>
-        </div>
-</div>
-
-<div class="mySlides fade">
-  
-  <img src="https://images.pexels.com/photos/51953/mother-daughter-love-sunset-51953.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" style="width:100%">
-  <div class="text">
-        <h2>headline text here</h2>
-        <p>this is the messeage for the headline text</p>
+  <div class="mySlides ">
+    
+    <img src="<?php echo get_template_directory_uri(); ?>/resources/img/white-background.jpg" style="width:100%">
+        <div class="text">
+        <h4>REVIEWS</h4>
+        <h3>Crisp, Eyecatching Videography, Fast paced action, and solid information combine to <br>make this a WINNER!</h3>
+        <p>-School Library Journal Starred Review</p>
+    </div>
   </div>
-</div>
 
-<div class="mySlides fade">
-  <img src="https://images.pexels.com/photos/132945/pexels-photo-132945.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" style="width:100%">
-  <div class="text">
-  <h2>headline text here</h2>
-        <p>this is the messeage for the headline text</p>
+  <div class="mySlides ">
+    
+    <img src="<?php echo get_template_directory_uri(); ?>/resources/img/white-background.jpg" style="width:100%">
+    <div class="text">    
+        <h4>REVIEWS</h4>    
+        <h3>"...Very active, visually appealing, and the actors were children their own age. <br>So they could really relate..."</h3>
+        <p>-Peggy Baechle</p>
         </div>
+  </div>
+
+  <div class="mySlides ">
+   
+    <img src="<?php echo get_template_directory_uri(); ?>/resources/img/white-background.jpg" style="width:100%">
+    <div class="text">
+        <h4>REVIEWS</h4>
+        <h3>"It engaged them, it gave them great content in the perfect <br>length of time."</h3>
+        <p>-Kass Bates</p>
+    </div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
+<br>
 
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
 </div>
 <!-- Product -->
@@ -82,5 +92,32 @@
         </div>
     </div>
 </div>
+<script>
+    var slideIndex = 1;
+showSlides(slideIndex);
 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
 <?php get_footer(); ?>
