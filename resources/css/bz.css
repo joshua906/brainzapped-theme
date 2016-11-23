@@ -37,6 +37,11 @@ a {
 	color: rgb(17,17,17);
 	text-decoration: none;
 	}
+a:hover {
+    color: green;
+    text-decoration: none;
+    
+}
 .green {
 	color: #0ba349;
 	
@@ -857,7 +862,7 @@ playlist
 	padding: 25px 0px;
 }
 .contact-header {
-	background-image: url(../img/background.jpg);
+	background-image: url(../img/contact-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

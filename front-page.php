@@ -153,7 +153,9 @@
           
         	<div class="ms-item col-xs-6 col-sm-6 col-md-6">
             	<div class="card-playlist">
+               <div class="bw pic">
   					 <?php the_post_thumbnail(); ?>
+                </div>
   					<div class="container-card-playlist">
                     <p><em><?php the_date(); ?></em></p>
 						<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
