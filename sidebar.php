@@ -8,14 +8,14 @@
                     <?php dynamic_sidebar( 'sidebar-1' ); ?>  
                         <?php } else { ?>
                   <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <ul id="sidebar" class="category-layout">
-                			<li><i class="fa fa-caret-right" aria-hidden="true"></i>
+                    <div id="sidebar" class="category-layout">
+                			
                             <?php the_category(', ') ?>
-                      </li>
-                     </ul>
+                    </div>
                    </div>
+
                   <?php } ?>
-            		</div>    
+            </div>
         	</div>
    		</div>
  	</div>

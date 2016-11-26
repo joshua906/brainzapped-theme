@@ -112,8 +112,8 @@ Unauthorized copying is a violation of applicable laws.</p>
       // MASSONRY Without jquery
       var container = document.querySelector('#ms-container');
       var msnry = new Masonry( container, {
-        itemSelector: '.ms-item-small',
-        columnWidth: '.ms-item-small',                
+        itemSelector: '.ms-item',
+        columnWidth: '.ms-item',                
       });  
       
         });

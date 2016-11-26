@@ -18,16 +18,24 @@
 <!-- about section-->
 
 <div class="about">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h4 class="headline">Welcome to Brain Zapped!</h4>
+    </div>
+  </div>
+</div>
 	<div class="container">
     	<div class="row">
-        	<div class="col-xs-12 col-sm-12 col-m-12 col-lg-12">
+        	<div class="col-xs-12 col-sm-6 col-m-6 col-lg-6">
             	<div class="">
                 <div class="">
-            		<h4>Welcome to <br><span class="headline">Brain Zapped!</span></h4>
                 	<p>Get Brain Zapped! We create educational, inspiring, and entertaining videos for kids, ages 6 to 99. Get zapped with info about everything from science to school life, to just  being awesome. We want to help you be the best you, you can be! </p>
-                	<p>Our Brain Zapped Science series is designed with educators and students in mind. Each video is crafted to address curriculum standards while infusing a fun burst of knowledge into the ol' noggin. Educators can use them to kickstart topics or just get BRAIN ZAPPED for the fun of it. </p>
                 </div>
                 </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-m-6 col-lg-6">
+              <p>Our Brain Zapped Science series is designed with educators and students in mind. Each video is crafted to address curriculum standards while infusing a fun burst of knowledge into the ol' noggin. Educators can use them to kickstart topics or just get BRAIN ZAPPED for the fun of it. </p>
             </div>
       </div>
   </div>
@@ -125,7 +133,44 @@
               <?php endwhile; ?>
         </div>
       </div>
-</div>
+      </div>
+<!-- Media query -->
+<div class="most-watched-two">
+<div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <h3>MOST WATCHED</h3>
+            </div>
+        </div>
+  </div>
+  </div>
+      <div class="most-watched-media">
+          <div class="container">
+      <div class="row">
+       <?php $popularpost = new WP_Query( array( 'posts_per_page' => 3, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) ); while ( $popularpost->have_posts() ) : $popularpost->the_post(); ?>
+          <div class="col-xs-12">
+      
+              <div class="card">
+                  <div class="bw pic">
+                      <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                      <!--<span class="vlog-format-action small"><i class="fa fa-play"></i></span>-->
+                    </div>
+                  <div class="container-card">
+                        <p class="category-text"><?php the_category( ','); ?></p>
+                        <h4><a href="#"><?php the_title(); ?></a></h4>
+                        <p><?php echo wp_trim_words( get_the_content(), 12, '...' ); ?></p>
+                    <a href="<?php the_permalink(); ?>"><button class="button">play video</button></a><br>
+                    <i class="fa fa-twitter" aria-hidden="true"></i><i class="fa fa-facebook" aria-hidden="true"></i>
+                  </div>
+              </div>
+        </div>
+      </div>    
+      <?php endwhile; ?>
+    </div>
+  </div>
+
+
+
 <div class="more-button">
   <div class="container">
       <div class="row">

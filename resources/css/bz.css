@@ -40,7 +40,7 @@ a {
 a:hover {
     color: green;
     text-decoration: none;
-    
+
 }
 .green {
 	color: #0ba349;
@@ -626,11 +626,16 @@ img {
 .most-watched {
     margin-bottom: 25px;
 }
-.most-watched h3 {
+.most-watched-two h3 {
 	text-align: left;
 	padding-bottom: 20px;
 	padding-top: 30px;
 	}
+.most-watched h3 {
+    text-align: left;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    }
 .most-watched .content h3 {
     padding: 0px;
 }	
@@ -653,7 +658,7 @@ img {
 .container-card-most {
 	padding: 0px 0px;
 	background-color: #fbfbfb;
-	margin-top: 15px;
+	margin-top: 25px;
 	}
 .most-watched-img img {
 	width: 289px;
@@ -675,6 +680,19 @@ img {
 .most-watched .content {
     padding-top: 20px;
     padding-right: 30px;
+}
+}
+@media only screen and (max-width:661px){
+.most-watched {
+    display:none;
+}
+}
+@media only screen and (min-width: 661px) {
+ .most-watched-media { 
+    display:none; 
+}
+.most-watched-two {
+    display:none;
 }
 }
 /*----------------------------
