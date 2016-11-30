@@ -196,7 +196,7 @@
        <?php query_posts('category_name=brain-zapped'); ?>
         <?php while ( have_posts() ) : the_post(); ?>
           
-        	<div class="ms-item col-xs-6 col-sm-6 col-md-6">
+        	<div class="ms-item col-xs-12 col-sm-6 col-md-6">
             	<div class="card-playlist">
                <div class="bw pic">
   					 <?php the_post_thumbnail(); ?>

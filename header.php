@@ -42,7 +42,7 @@
              $defaults = array(
                   'container' => 'ul',
                   'theme_location' => 'primary-menu',
-                  'menu_class' => 'nav navbar-nav pull-right'
+                  'menu_class' => 'nav navbar-nav pull-left'
                 );
                 
                 wp_nav_menu( $defaults );
