@@ -120,7 +120,7 @@
                         <!--<p><em><?php the_author(); ?></em></p>-->
                         <p class="paragraph"><?php echo wp_trim_words( get_the_content(), 15, '...' ); ?></p>
 
-                        <h6><a href="<?php the_permalink(); ?>">play video</a></h6>
+                        <h6><a href="<?php the_permalink(); ?>">PLAY VIDEO</a></h6>
 
                         
 
@@ -205,6 +205,7 @@
                     <p><em><?php the_date(); ?></em></p>
 						<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                       <p><?php echo wp_trim_words( get_the_content(), 14, '...' ); ?></p>
+                      <h6><a href="<?php the_permalink(); ?>">PLAY VIDEO</a></h6>
   					</div>
 				</div>
             </div>

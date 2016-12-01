@@ -20,10 +20,11 @@
  <?php wp_head(); ?>
 </head>
 <!--preloader-->
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> onload="myFunction()" style="margin:0;">
+
 
 <!-- Navigation -->
-<div class="float-panel data-top="0" data-scroll="300" ">
+<div class="float-panel" data-top="0" data-scroll="300" >
   <div class="navbar navbar-inverse navbar-fixed-top main-navigation" role="navigation">
       <div class="container">
           <div class="navbar-header col-md-3 col-sm-3">
@@ -42,7 +43,7 @@
              $defaults = array(
                   'container' => 'ul',
                   'theme_location' => 'primary-menu',
-                  'menu_class' => 'nav navbar-nav pull-left'
+                  'menu_class' => 'nav navbar-nav pull-right'
                 );
                 
                 wp_nav_menu( $defaults );
