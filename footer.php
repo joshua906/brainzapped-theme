@@ -4,7 +4,7 @@
     	<div class="row">
         	<div class="col-xs-12 col-sm-4 col-md-4">
             	<h3>Brain Zapped 2016</h3>
-                <p><a href="#">Privacy and terms of use</a></p>
+                <p><a href="<?php echo get_template_directory_uri(); ?>/single-termsofuse.php">Privacy and terms of use</a></p>
                 
                 <h3>Contact</h3>
                 <p>email: example@yahoo.com</p>
@@ -35,6 +35,6 @@
 </script>
 
  <?php wp_footer(); ?>
- 
+
 </body>
 </html>

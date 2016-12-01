@@ -968,6 +968,12 @@ textarea {
     padding: 12% 39%;
 }*/
 
+/********terms of use**********/
+
+.terms-of-use h3 {
+    text-align: left;
+}
+
 /***********preloader***************/
 
 #loader {

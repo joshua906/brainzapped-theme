@@ -163,6 +163,21 @@ function create_custom_post_types() {
 				),
 			)
 		);
+
+	register_post_type('termsofuse',
+		array(
+			'labels' => array(
+				'name' => _('terms of use'),
+				'singular_name' => _('termsofuse')
+				),
+			'public'=> true,
+			'has_archive' => false,
+			'show_in_nav_menus' => true,
+			'rewrite' => array(
+				'slug' => 'terms-of-use'
+				),
+			)
+		);
 }
 
 add_action('init', 'create_custom_post_types');
@@ -193,7 +208,7 @@ add_action('wp_enqueue_scripts', 'bz_theme_styles');
 
 
 function bz_js() {
-	
+
 	wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/vendor/bootstrap/js/bootstrap.min.js' );
 	wp_enqueue_script( 'masonry' );
 	wp_enqueue_script( 'masonry', '//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.js' );

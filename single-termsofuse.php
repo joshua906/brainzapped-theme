@@ -1,11 +1,18 @@
 <?php get_header(); ?>
 
 
-<div class="terms">
+<div class="terms-of-use">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Terms of Use & Privacy Policy</h1>
+
+            <?php while ( have_posts() ) : the_post(); 
+
+                $heading = get_field('heading_one');
+
+            ?>
+
+                <h2><?php echo $heading; ?></h2>
 
                 <p>Please read the following Terms and Conditions of Use carefully before using this web site. Your use of this web site is expressly conditioned on your acceptance of these terms and conditions without any modifications. Your use of this web site constitutes your acceptance of all the terms and conditions set forth herein. If you do not agree with any part of the following terms and conditions, you should not use this web site.</p>
 
@@ -79,7 +86,7 @@
 
 
 
-
+                    <?php endwhile; ?>
 
 
 
