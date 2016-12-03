@@ -8,7 +8,7 @@
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12">
-            	<h1>Contact George Garcia</h1>
+            	<h1>Contact</h1>
             </div>
         </div>
     </div>
@@ -67,11 +67,11 @@
             </div>
             <div class="col-md-6">
             	<h4>Email</h4>
-                <p>example@hots.com</p>
+                <p>brainzappedtv@gmail.com</p>
                 <h4>Phone</h4>
-                <p>555-555-5555</p>
+                <p>214-284-3456</p>
                 <h4>Address</h4>
-                <p>2000 Fairview way<br>McKinney, TX 75070</p>
+                <p> 6951 Virginia Pkwy<br>McKinney, TX 75070 #322</p>
             </div>
         </div>
     </div>

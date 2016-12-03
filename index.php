@@ -7,7 +7,7 @@
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12">
-            <h1>Brain Zapped Video Blog</h1>
+            <h1>VIDEOS</h1>
             </div>
         </div>
     </div>
@@ -20,7 +20,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2>VIDEOS</h2>
+                <h2></h2>
             </div>
         </div>
     </div>
