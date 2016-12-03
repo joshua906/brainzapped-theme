@@ -86,7 +86,7 @@
                 <p><?php echo $description; ?></p>
                 <p><?php echo $length; ?></p>
                 <p><?php echo $price; ?></p>
-                <button class="button">PURCHASE</button>
+                <button class="button" href="https://www.paypal.com/webapps/shoppingcart?mid=6715461249182138749307641480784161&xclick_params=Y21kJTNkX2NhcnQlMjZidXNpbmVzcyUzZFVBOVU5R1lNV01FRkclMjZpdGVtX25hbWUlM2RCcmFpbiUyNTIwWmFwcGVkJTI1MjBTY2llbmNlJTI1MjBWb2x1bWUlMjUyME9uZSUyNTIwRFZEJTI2aXRlbV9udW1iZXIlM2RCWiUyNTIwU2NpZW5jZSUyNTIwVm9sdW1lJTI1MjBPbmUlMjZhbW91bnQlM2QxNSUyZTAwJTI2Y3VycmVuY3lfY29kZSUzZFVTRCUyNmxjJTNkVVMlMjZidXR0b25fc3VidHlwZSUzZHByb2R1Y3RzJTI2bm9fbm90ZSUzZDAlMjZjbiUzZEFkZCUyNTIwc3BlY2lhbCUyNTIwaW5zdHJ1Y3Rpb25zJTI1MjB0byUyNTIwdGhlJTI1MjBzZWxsZXIlMjZub19zaGlwcGluZyUzZDIlMjZybSUzZDElMjZyZXR1cm4lM2RodHRwJTI1M2ElMmYlMmZ3d3clMmVicmFpbnphcHBlZCUyZWNvbSUyNmNhbmNlbF9yZXR1cm4lM2RodHRwJTI1M2ElMmYlMmZ3d3clMmVicmFpbnphcHBlZCUyZWNvbSUyNnRheF9yYXRlJTNkMCUyZTAwMCUyNndlaWdodF91bml0JTNkbGJzJTI2YWRkJTNkMSUyNmJuJTNkUFAlMmRTaG9wQ2FydEJGJTI1M2FidG5fY2FydF9MRyUyZWdpZiUyNTNhSG9zdGVkJTI2aW50ZXJuYWxfaXNfaG9zdGVkX2J1dHRvbiUzZHRydWUlMjZjaGFyc2V0JTNkVVRGJTJkOCUyNnZpc2l0b3JfaWQlM2Q2MTI0OTE4MjEzODc0OTMwNzY0JTI2bWVyY2hhbnRfZW1haWwlM2RlZ2dlbnRlcnRhaW5tZW50JTQwc2JjZ2xvYmFsJTJlbmV0JTI2YnVzaW5lc3NfbmFtZSUzZEJyYWluJTIwWmFwcGVkJTJjJTIwTExDJTI2bWVyY2hhbnRfaWQlM2RVQTlVOUdZTVdNRUZHJTI2d2FfdHlwZSUzZFNob3BwaW5nQ2FydCUyNnNob3BwaW5nX2NhcnRfZmxhZyUzZHRydWUlMjZob3N0ZWRfYnV0dG9uX2lkJTNkM0NRUVU1SDRHTTM4TCUyNiUyNlNISVBQSU5HX0FORF9UQVglM2QxJTI2&flowlogging_id=5d806cdfeff18#/checkout/shoppingCart">PURCHASE</button>
             </div>
             <?php endwhile; ?>
         </div>

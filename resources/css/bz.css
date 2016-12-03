@@ -746,6 +746,9 @@ playlist
     padding-bottom: 20px;
     padding-top: 30px;
 }
+.playlist h6 a{
+    color:purple;
+}
 .card-playlist {
     box-shadow:;
     transition: 0.3s;
