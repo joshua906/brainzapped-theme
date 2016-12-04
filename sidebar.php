@@ -11,10 +11,10 @@
                     <div id="sidebar" class="category-layout">
                 			
                             <?php the_category(', ') ?>
+                        
                     </div>
                    </div>
-
-                  <?php } ?>
+                   <?php } ?>
             </div>
         	</div>
    		</div>

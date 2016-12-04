@@ -626,6 +626,9 @@ img {
 .most-watched {
     margin-bottom: 25px;
 }
+.most-watched h6 a {
+    color: purple;
+}
 .most-watched-two h3 {
 	text-align: left;
 	padding-bottom: 20px;
