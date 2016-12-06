@@ -23,6 +23,7 @@
 <body <?php body_class(); ?> onload="myFunction()" style="margin:0;">
 
 
+
 <!-- Navigation -->
 <div class="float-panel" data-top="0" data-scroll="300" >
   <div class="navbar navbar-inverse navbar-fixed-top main-navigation" role="navigation">
