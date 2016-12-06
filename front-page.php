@@ -68,7 +68,7 @@
                         <h4><a href="#"><?php the_title(); ?></a></h4>
                         <p><?php echo wp_trim_words( get_the_content(), 12, '...' ); ?></p>
                     <a href="<?php the_permalink(); ?>"><button class="button">play video</button></a><br>
-                    <a href="https://twitter.com/share?url={{ post.url }}&text={{ post.title }}"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="https://www.facebook.com/sharer/sharer.php?url={{ post.url }}&text={{ post.title }}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/intent/tweet"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="https://www.facebook.com/sharer/sharer.php?url={{ post.url }}&text={{ post.title }}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
   					</div>
 				</div>
         </div>
@@ -81,7 +81,7 @@
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12">
-            	<a href="<?php echo get_template_directory_uri(); ?>/bzs/wordpress/videos"><button class="button-more text-center">view all videos &#8594;</button></a>
+            	<a href="<?php echo get_page_link(8); ?>"><button class="button-more text-center">view all videos &#8594;</button></a>
             </div>
         </div>
     </div>
