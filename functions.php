@@ -157,6 +157,7 @@ function create_custom_post_types() {
 				'singular_name' => _('Product Page')
 				),
 			'public'=> true,
+			'id'=> 122,
 			'has_archive' => false,
 			'show_in_nav_menus' => true,
 			'rewrite' => array(
