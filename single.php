@@ -56,7 +56,7 @@ Unauthorized copying is a violation of applicable laws.</p>
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12">
-                <a href="<?php echo get_template_directory_uri(); ?>/bzs/wordpress/videos"><button class="button-more text-center">&#8592;back to videos</button></a>
+                <a href="<?php echo get_page_link(8); ?>"><button class="button-more text-center">&#8592;back to videos</button></a>
             </div>
         </div>
     </div>
@@ -100,7 +100,7 @@ Unauthorized copying is a violation of applicable laws.</p>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <button class="button-more text-center">&#8592;back to videos</button>
+                <a href="<?php echo get_page_link(8); ?>"><button class="button-more text-center">&#8592;back to videos</button></a>
             </div>
         </div>
     </div>

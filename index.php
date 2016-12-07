@@ -33,9 +33,11 @@
 			<?php while ( have_posts() ) : the_post(); ?>
 	        	<div class="ms-item col-xs-12 col-sm-6 col-md-6 col-lg-6">
 	        	
-	            	<div class="card-video">
-	  					<?php the_post_thumbnail(); ?>
-	  					<div class="container-card-video">
+	            	    <div class="card-video">
+                      <div class="bw pic">
+	  					        <?php the_post_thumbnail(); ?>
+                      </div>
+	  					        <div class="container-card-video">
 	                    	<h4 class="category-text"><?php the_category(', ') ?></h4>
 	                      
 	                        <h4><?php the_title(); ?></h4>

@@ -175,7 +175,7 @@
   <div class="container">
       <div class="row">
           <div class="col-md-12">
-              <a href="<?php echo get_template_directory_uri(); ?>/bzs/wordpress/videos"><button class="button-more text-center">view all videos &#8594;</button></a>
+              <a href="<?php echo get_page_link(8); ?>"><button class="button-more text-center">view all videos &#8594;</button></a>
             </div>
         </div>
     </div>
@@ -219,7 +219,7 @@
   <div class="container">
       <div class="row">
           <div class="col-md-12">
-             <a href="<?php echo get_permalink(); ?>/video"><button class="button-more text-center">view all videos &#8594;</button></a>
+             <a href="<?php echo get_page_link(8); ?>"><button class="button-more text-center">view all videos &#8594;</button></a>
             </div>
         </div>
     </div>
