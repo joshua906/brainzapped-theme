@@ -9,12 +9,10 @@
  *
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
- * @package bz
- * @subpackage Sbz theme
- * @since bz version 1.0
+ * @package worpress
+ * @subpackage brainzapped-theme
  */
-
- get_header(); ?>
+get_header(); ?>
 
 
 
