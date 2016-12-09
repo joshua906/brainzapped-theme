@@ -11,7 +11,7 @@
  *
  * @package bz
  * @subpackage Sbz theme
- * @since 
+ * @since bz version 1.0
  */
 
  get_header(); ?>
