@@ -1,6 +1,4 @@
 <?php 
-if (! defined('ABSPATH'))
-die('Access Denied.');
 /**
  * The main template file
  *
