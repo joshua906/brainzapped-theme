@@ -1,4 +1,6 @@
 <?php 
+if (! defined('ABSPATH'))
+die('Access Denied.');
 /**
  * The main template file
  *
@@ -11,6 +13,7 @@
  *
  * @package worpress
  * @subpackage brainzapped-theme
+ * @since version 4.7
  */
 get_header(); ?>
 
