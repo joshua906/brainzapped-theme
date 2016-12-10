@@ -713,7 +713,7 @@ img {
 footer
 ----------*/
 .footer {
-    background-image: url(../img/footer.jpg);
+    background-image: url(../brainzapped-theme/resources/img/footer.jpg);
     background-size: cover;
     background-color: #240828;
     color: #fff;
@@ -902,7 +902,7 @@ playlist
   padding: 25px 0px;
 }
 .contact-header {
-  background-image: url(../img/george.jpg);
+  background-image: url(../brainzapped-theme/resources/img/contact-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
