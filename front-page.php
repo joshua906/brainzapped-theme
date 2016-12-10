@@ -1,4 +1,20 @@
-<?php get_header(); ?>
+<?php 
+/**
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package WordPress
+ * @subpackage Brainzapped
+ * @since 1.0
+ * @version 1.0
+ */
+get_header(); ?>
 
 <!-- hero video -->
 
@@ -29,7 +45,7 @@
     	<div class="row">
         	<div class="col-xs-12 col-sm-6 col-m-6 col-lg-6">
             	<div class="">
-                <div class="">
+                <div class=""><p id="demo"></p>
                 	<p>Get Brain Zapped! We create educational, inspiring, and entertaining videos for kids, ages 6 to 99. Get zapped with info about everything from science to school life, to just  being awesome. We want to help you be the best you, you can be! </p>
                 </div>
                 </div>

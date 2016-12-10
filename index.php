@@ -2,16 +2,17 @@
 /**
  * The main template file
  *
- * This is the most generic template file in a WordPress theme and one
- * of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query,
- * e.g., it puts together the home page when no home.php file exists.
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
  *
- * @link http://codex.wordpress.org/Template_Hierarchy
+ * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package worpress
- * @subpackage brainzapped-theme
- * @since version 4.7
+ * @package WordPress
+ * @subpackage Brainzapped
+ * @since 1.0
+ * @version 1.0
  */
 get_header(); ?>
 
@@ -87,7 +88,7 @@ get_header(); ?>
     </div>
 </div>
 
- <script>
+<script>
         
         jQuery(window).load(function() {
         
@@ -101,7 +102,7 @@ get_header(); ?>
         });
 
 
- var slideIndex = 1;
+ /*var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -117,7 +118,7 @@ function showSlides(n) {
   var slides = document.getElementsByClassName("mySlides");
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
-}
+}*/
     </script>
 
 <?php get_footer(); ?>

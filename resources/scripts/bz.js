@@ -15,6 +15,7 @@ function McFloatPanel(){var i=[],r=[],h="className",s="getElementsByClassName",d
 
 var myVar;
 
+
 function myFunction() {
     myVar = setTimeout(showPage, 2000);
 }
@@ -24,3 +25,4 @@ function showPage() {
   document.getElementById("myDiv").style.display = "block";
 }
 
+      
