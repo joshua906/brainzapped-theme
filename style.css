@@ -1169,10 +1169,11 @@ textarea {
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
+
+  cursor: pointer;
+  height: 8px;
+ width: 8px;
+  margin: 0 7px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;

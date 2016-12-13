@@ -100,9 +100,9 @@ Unauthorized copying is a violation of applicable laws.</p>
                     </div>
                     <div class="container-card">
                         <p class="category-text-small"><?php the_category( ','); ?></p>
-                        <h5><a href="#"><?php the_title(); ?></a></h5>
+                        <h4><a href="#"><?php the_title(); ?></a></h4>
                         <!--<p><?php echo wp_trim_words( get_the_content(), 7, '...' ); ?></p>-->
-                    <button class="button"><a href="<?php the_permalink(); ?>">play video</a></button><br>
+                    <a href="<?php the_permalink(); ?>"><button class="button">play video</button></a><br>
                     <i class="fa fa-twitter" aria-hidden="true"></i><i class="fa fa-facebook" aria-hidden="true"></i>
                     </div>
                 </div>
