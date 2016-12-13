@@ -313,12 +313,18 @@ navbar
 .sr-only:hover{
   color: #fff;
   }
+  .navbar-nav {
+    float: right;
+  }
 @media only screen and (max-width: 767px) {
 .navbar-header {
   -webkit-box-shadow: 4px 4px 7px 0 rgba(0,0,0,.24);
     -moz-box-shadow: 4px 4px 7px 0 rgba(0,0,0,.24);
     box-shadow: 4px 4px 7px 0 rgba(0,0,0,.24);
   height: 90px;
+  }
+  .navbar-nav {
+    float:left;
   }
   }
 /*--------------------
