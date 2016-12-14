@@ -37,6 +37,9 @@ get_header(); ?>
                  $pone = get_field('p_one');
                  $ptwo = get_field('p_two');
                  $pthree = get_field('p_three');
+                 $pfour = get_field('p_four');
+                 $pfive = get_field('p_five');
+                 $psix = get_field('p_six');
 
         ?>
 
@@ -50,9 +53,12 @@ get_header(); ?>
         	<div class="col-md-6">
               	<p><?php echo $pone; ?></p>
                 <p><?php echo $ptwo; ?></p>
+                <p><?php echo $pthree; ?></p>
             </div>
             <div class="col-md-6">
-              	<p><?php echo $pthree; ?></p>
+              	<p><?php echo $pfour; ?></p>
+                <p><?php echo $pfive; ?></p>
+                <p><?php echo $psix; ?></p>
             </div>
         </div>
     </div>

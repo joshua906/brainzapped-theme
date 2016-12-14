@@ -46,12 +46,7 @@
     </div>
 </div>
 
-<script>
-  $('.type-it').typeIt({
-    strings: ['Headline Text will go here', 'And anything else we want to add!']
-  }); 
-    
-</script>
+
 
  <!--<script>
         
@@ -68,7 +63,12 @@
 
       
     </script>-->
+<script>
+  $('.type-it').typeIt({
+    strings: ['Headline Text will go here', 'And anything else we want to add!']
+  }); 
 
+</script>
  <?php wp_footer(); ?>
 
 </body>
