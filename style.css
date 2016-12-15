@@ -46,7 +46,7 @@ a {
   text-decoration: none;
   }
 a:hover {
-    color: green;
+    color: #01a433;
     text-decoration: none;
 
 }
@@ -198,8 +198,8 @@ em {
 .float-panel {
     top: 0px;
     width: 100%;
-    z-index: 1200;
-  transition:all 0.3s;
+    z-index: 200;
+  transition:all 0.5s;
 }
 .fixed {
     box-shadow:0 2px 6px;  
@@ -549,7 +549,7 @@ img {
   margin-bottom: 30px;
 }
 .container-card-video {
-    padding: 30px 55px;
+    padding: 30px 20px;
     background-color: #fbfbfb;
     margin-bottom: 30px;
 }
@@ -999,43 +999,6 @@ textarea {
 
 /***********preloader***************/
 
-.spinner {
-  width: 40px;
-  height: 40px;
-  background-color: #333;
-  position:absolute;
-  top:48%;
-  left:48%;
-  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
-  animation: sk-rotateplane 1.2s infinite ease-in-out;
-}
-.spinner-wrapper {
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  background-color:purple;
-  z-index: 9999999;
-}
-@-webkit-keyframes sk-rotateplane {
-  0% { -webkit-transform: perspective(120px) }
-  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
-  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
-}
-
-@keyframes sk-rotateplane {
-  0% { 
-    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
-  } 50% { 
-    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
-  } 100% { 
-    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-  }
-}
 
 /* Add animation to "page content" */
 .animate-bottom {

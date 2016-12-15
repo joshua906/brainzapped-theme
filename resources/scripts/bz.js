@@ -24,4 +24,3 @@ function showPage() {
   document.getElementById("myDiv").style.display = "block";
 }
 
-      

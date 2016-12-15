@@ -25,6 +25,17 @@ get_header(); ?>
         </div>
     </div>
 </div>
+
+<!--Product Intro-->
+<div class="product-intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+       
+      </div>
+    </div>
+  </div>
+</div>
 <!-- slide show for products -->
 <div class="">
 <div class="slideshow-container">
@@ -84,6 +95,7 @@ get_header(); ?>
                  $description = get_field('product_description');
                  $length = get_field('length');
                  $price = get_field('price');
+                 $introp = get_field('intro_p');
                  $image1 = get_field('image_1');
 
         ?>
@@ -99,6 +111,7 @@ get_header(); ?>
                 <h2><?php echo $title; ?></h2>
                 <p><em><?php echo $release; ?></em></p>
                 <p><b><?php echo $grade; ?></b></p>
+                <p><?php echo $introp; ?></p>
                 <p><?php echo $description; ?></p>
                 <p><?php echo $length; ?></p>
                 <p><?php echo $price; ?></p>
