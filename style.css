@@ -327,6 +327,12 @@ navbar
     float:left;
   }
   }
+@media (min-width: 768px){
+.navbar-nav {
+    float: right;
+    margin: 0;
+}
+}
 /*--------------------
 video hero
 ---------------------*/
