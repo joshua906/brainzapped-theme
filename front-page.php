@@ -45,7 +45,7 @@ get_header(); ?>
     	<div class="row">
         	<div class="col-xs-12 col-sm-6 col-m-6 col-lg-6">
             	<div class="">
-                <div class=""><p id="demo"></p>
+                <div class="">
                 	<p>Get Brain Zapped! We create educational, inspiring, and entertaining videos for kids, ages 6 to 99. Get zapped with info about everything from science to school life, to just  being awesome. We want to help you be the best you, you can be! </p>
                 </div>
                 </div>

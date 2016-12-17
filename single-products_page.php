@@ -60,6 +60,16 @@ get_header(); ?>
         </div>
   </div>
 
+    <div class="mySlides ">
+    
+    <img src="<?php echo get_template_directory_uri(); ?>/resources/img/white-background.jpg" style="width:100%">
+    <div class="text">    
+        <h4>REVIEWS</h4>    
+        <h3>&#9733;&#9733;&#9733;&#9734;<br>"An appealing program."</h3>
+        <p>-Video Librarian Recommended</p>
+        </div>
+  </div>
+
   <div class="mySlides ">
    
     <img src="<?php echo get_template_directory_uri(); ?>/resources/img/white-background.jpg" style="width:100%">
@@ -78,7 +88,8 @@ get_header(); ?>
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
 </div>
 </div>
 <!-- Product -->
