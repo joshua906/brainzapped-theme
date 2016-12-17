@@ -30,6 +30,7 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat: 400,700" rel="stylesheet">
 <link href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' type='text/css' />
 <?php wp_head(); ?>
+
 <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
 
 

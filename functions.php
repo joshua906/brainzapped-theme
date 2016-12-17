@@ -223,6 +223,7 @@ function bz_js() {
 	wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/vendor/bootstrap/js/bootstrap.min.js' );
 	wp_enqueue_script( 'masonry' );
 	wp_enqueue_script( 'masonry', '//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.js' );
+	wp_enqueue_script( 'typeit', '//cdnjs.cloudflare.com/ajax/libs/typeit/4.2.3/typeit.min.js' );
 	
 }
 

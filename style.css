@@ -192,8 +192,17 @@ em {
     width: 1050px;
 }
 }
-/**********top nav******************/
+/**********temporary header ******************/
 
+/*.hero-image {
+    background-image: url(../brainzapped-theme/resources/img/hero.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+}
+*/
 /********** float panel **********/
 .float-panel {
     top: 0px;

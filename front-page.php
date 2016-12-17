@@ -16,6 +16,16 @@
  */
 get_header(); ?>
 
+<!-- temporary header
+<div class="hero-image">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Text goes here</h1>
+      </div>
+    </div>
+  </div>
+</div>-->
 <!-- hero video -->
 
 <div class="hero">
@@ -84,7 +94,10 @@ get_header(); ?>
                         <h4><a href="#"><?php the_title(); ?></a></h4>
                         <p><?php echo wp_trim_words( get_the_content(), 12, '...' ); ?></p>
                     <a href="<?php the_permalink(); ?>"><button class="button">play video</button></a><br>
-                    <a href="https://twitter.com/intent/tweet"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="https://www.facebook.com/sharer/sharer.php?url={{ post.url }}&text={{ post.title }}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/share?
+  url=brainzapped.com
+  related=twitterapi%2Ctwitter&
+  text=custom%20share%20text"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="https://www.facebook.com/sharer/sharer.php?url={{ post.url }}&text={{ post.title }}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
   					</div>
 				</div>
         </div>
@@ -254,6 +267,9 @@ get_header(); ?>
       
         });
 
-      
+  $('.type-it').typeIt({
+    strings: ['Headline Text will go here', 'And anything else we want to add!']
+  });
+
     </script>
 <?php get_footer(); ?>
