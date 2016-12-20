@@ -64,7 +64,7 @@ Unauthorized copying is a violation of applicable laws.</p>
                     <a href="https://twitter.com/share?
   url=brainzapped.com
   related=twitterapi%2Ctwitter&
-  text=custom%20share%20text"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="https://www.facebook.com/sharer/sharer.php?url={{ post.url }}&text={{ post.title }}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  text=custom%20share%20text"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="https://www.facebook.com/video.php?v={id}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
