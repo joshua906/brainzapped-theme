@@ -59,7 +59,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
-                <a class="navbar-brand" href="#"><img src="<?php echo get_template_directory_uri(); ?>/resources/img/bzlogo.png" alt=""/></a>
+                <a class="navbar-brand" href="<?php echo home_url(); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/resources/img/bzlogo.png" alt=""/></a>
           </div>
           <div class="navbar-collapse collapse">
 
