@@ -106,7 +106,10 @@ Unauthorized copying is a violation of applicable laws.</p>
                         <h4><a href="#"><?php the_title(); ?></a></h4>
                         <!--<p><?php echo wp_trim_words( get_the_content(), 7, '...' ); ?></p>-->
                     <a href="<?php the_permalink(); ?>"><button class="button">play video</button></a><br>
-                    <i class="fa fa-twitter" aria-hidden="true"></i><i class="fa fa-facebook" aria-hidden="true"></i>
+                    <a href="https://twitter.com/share?
+  url=brainzapped.com
+  related=twitterapi%2Ctwitter&
+  text=custom%20share%20text"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="https://www.facebook.com/video.php?v={id}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                     </div>
                 </div>
         </div>
