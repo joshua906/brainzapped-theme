@@ -710,7 +710,7 @@ img {
     display: none;
 }
 .most-watched p em {
-    display: none;
+    display:;
 }
 .most-watched .content {
     padding-top: 20px;

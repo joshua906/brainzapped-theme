@@ -86,7 +86,7 @@ get_header(); ?>
         <div class="col-xs-12 col-sm-4 col-md-4">
             	<div class="card">
                 	<div class="bw pic">
-  						        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+  						        <a href="<?php the_permalink(); ?>"><?php echo do_shortcode("[featured-video-plus]"); ?></a>
                     	<!--<span class="vlog-format-action small"><i class="fa fa-play"></i></span>-->
                     </div>
   					<div class="container-card">
