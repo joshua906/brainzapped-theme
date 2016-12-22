@@ -184,7 +184,9 @@ function create_custom_post_types() {
 
 add_action('init', 'create_custom_post_types');
 
+//post formats
 
+add_theme_support('post-formats',array('aside','image','video'));
 
 
 ///menu
