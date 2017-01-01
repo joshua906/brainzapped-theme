@@ -325,7 +325,15 @@ navbar
   .navbar-nav {
     float: right;
   }
-@media only screen and (max-width: 767px) {
+   .navbar-nav>li {
+    float: left;
+}
+
+.navbar-nav>li {
+  float:left;
+}
+
+@media only screen and (max-width: 768px) {
 .navbar-header {
   -webkit-box-shadow: 4px 4px 7px 0 rgba(0,0,0,.24);
     -moz-box-shadow: 4px 4px 7px 0 rgba(0,0,0,.24);
@@ -335,12 +343,19 @@ navbar
   .navbar-nav {
     float:left;
   }
+ .navbar-nav>li {
+    float: left;
+}
   }
-@media (min-width: 768px){
+@media only screen and (min-width: 768px){
 .navbar-nav {
     float: right;
     margin: 0;
 }
+.navbar-nav>li {
+    float: left;
+}
+
 }
 /*--------------------
 video hero
