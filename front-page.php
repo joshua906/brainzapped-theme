@@ -26,18 +26,20 @@ get_header(); ?>
     </div>
   </div>
 </div>-->
+
+
+
 <!-- hero video -->
 
 <div class="hero">
 <div class="header-container">
 	<div class="video-container">
-   	  <video preload="true" autoplay loop volume="0" poster="Inbox-Zero.jpg">
-        	<source src="<?php echo get_template_directory_uri(); ?>/video/Cheer-up.mp4" type="video/mp4">
+   	  <video preload="true" autoplay loop muted poster="">
+        	<source src="<?php echo get_template_directory_uri(); ?>/video/bz-trailer-three.mp4" type="video/mp4">
             <source src="<?php echo get_template_directory_uri(); ?>/video/.webm" type="video/webm">
           <source src="<?php echo get_template_directory_uri(); ?>/video/.ogv" type="video/ogg">
       </video>
-      <h1></h1>
-      <span class="type-it"></span>
+
     </div>
 </div>
 </div>

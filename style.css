@@ -360,6 +360,10 @@ navbar
 /*--------------------
 video hero
 ---------------------*/
+
+
+
+
 .homepage-hero-module {
     border-right: none;
     border-left: none;
@@ -938,7 +942,7 @@ playlist
   padding: 25px 0px;
 }
 .contact-header {
-  background-image: url(../brainzapped-theme/resources/img/contact-background.jpg);
+  background-image: url(../brainzapped-theme/resources/img/kids-contact.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

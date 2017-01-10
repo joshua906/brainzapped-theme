@@ -26,7 +26,7 @@ get_header(); ?>
     </div>
 </div>
 <!-- bio-->
-<div class="bio">
+<!--<div class="bio">
 	<div class="container">
     	<div class="row">
 
@@ -63,7 +63,7 @@ get_header(); ?>
         </div>
     </div>
 </div>
-<?php endwhile; ?>
+<?php endwhile; ?>-->
 <!-- Contact form-->
 <div class="contact">
 	<div class="container">
@@ -89,7 +89,7 @@ get_header(); ?>
                 <h4>Phone</h4>
                 <p>214-284-3456</p>
                 <h4>Address</h4>
-                <p> 6951 Virginia Pkwy<br>McKinney, TX 75070 #322</p>
+                <p> 6951 Virginia Pkwy, #322<br> Mailbox 13 <br>McKinney, TX 75071</p>
             </div>
         </div>
     </div>
