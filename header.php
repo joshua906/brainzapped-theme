@@ -19,6 +19,7 @@
 <!Doctype html>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
+
 <title>Brain Zapped</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 <!-- Latest compiled and minified CSS -->
@@ -43,7 +44,7 @@
 
 </head>
 <!--preloader-->
-<body <?php body_class(); ?> onload="myFunction()" style="margin:0;">
+<body <?php body_class(); ?> >
 
 
 

@@ -59,7 +59,14 @@ get_header(); ?>
 	                        <h4><?php the_title(); ?></h4>
 	                        <p><?php the_excerpt(); ?></p>
 	                        <a href="<?php the_permalink(); ?>"><button class="button">play video</button></a><br>
-	                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i><i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+	                                           <a href="https://twitter.com/share?
+                              url=brainzapped.com
+                              related=twitterapi%2Ctwitter&
+                                text=custom%20share%20text"><i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.facebook.com/video.php?v={id}">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
 	                    </div>
 	                 </div>
 	            </div>

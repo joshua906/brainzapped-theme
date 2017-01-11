@@ -11,15 +11,3 @@ function McFloatPanel(){var i=[],r=[],h="className",s="getElementsByClassName",d
     strings: ['Headline Text will go here', 'And anything else we want to add!']
   }); 
 */
-
-var myVar;
-
-
-function myFunction() {
-    myVar = setTimeout(showPage, 2000);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}

@@ -17,7 +17,7 @@ Global Changes
 .text-transform {
     text-decoration: none;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
 }
 .headline {
     padding: 15px 0px;
@@ -194,15 +194,26 @@ em {
 }
 /**********temporary header ******************/
 
-/*.hero-image {
-    background-image: url(../brainzapped-theme/resources/img/hero.jpg);
+.hero-image {
+    background-image: url(../brainzapped-theme/resources/img/new-img.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50px;
+    height: 550px;
 }
-*/
+.hero-image h1 {
+  color: #fff;
+  font-size: 3.2em;
+
+}
+.hero-image .content {
+   padding: 20%;
+}
+.white-heading {
+  color: #fff;
+  font-size: 3.2em;
+}
 /********** float panel **********/
 .float-panel {
     top: 0px;
@@ -360,6 +371,87 @@ navbar
 /*--------------------
 video hero
 ---------------------*/
+/*.header-video {
+  position: relative;
+  overflow: hidden;
+}
+
+.header-video iframe,
+.header-video video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.header-video iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.header-video video {
+  width: 100%;
+}
+
+.header-video__teaser-video {
+  width: 100%;
+  height: auto; 
+}
+
+.header-video__media {
+  width: 100%;
+  height: auto;
+}
+.header-video__play-trigger {
+  z-index: 5;
+  position: absolute;
+  background: rgba(0,0,0,.3);
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 1.5em 3em;
+  z-index: 5;
+  left: 50%;
+  top: 50%;
+  border-radius: 10px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: background .5s;
+  -moz-transition: background .5s;
+  transition: background .5s;
+}
+
+.header-video__play-trigger:hover {
+  background: rgba(0,0,0,.5);
+}
+.header-video__close-trigger {
+  z-index: 99;
+  position: absolute;
+  background: #A61212;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 2em 3em;
+  border-radius: 10px;
+  right: 30px;
+  top: 30px;
+  -webkit-transition: background .3s;
+  -moz-transition: background .3s;
+  transition: background .3s;  
+  border: none;
+}
+.header-video__close-trigger:hover {
+  background: #363636;
+  cursor: pointer;
+}
+
+
+
+
+
+
 
 
 
@@ -506,12 +598,55 @@ video {
     font-family: 'Raleway', sans-serif;
     font-size: 2em;
   }
-  }
+  }*/
+
+  .homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+    height: auto; 
+}
 /*------------------
   about section 
 ---------------*/
 .about p {
-    color: #fff;
+    color: #222;
 }
 
 
@@ -1072,11 +1207,12 @@ textarea {
 }
 
 .about {
-	background-image: url(../brainzapped-theme/resources/img/about-pic.jpg);
+	/*background-image: url(../brainzapped-theme/resources/img/about-pic.jpg);*/
 	background-attachment: fixed;
 	background-size:cover;
 	padding: 50px;
 	color: #21ba39;
+  background-color: #fbfbfb;
 }
 
 /***********pagination*****************/

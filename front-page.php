@@ -16,20 +16,48 @@
  */
 get_header(); ?>
 
-<!-- temporary header
+<!-- temporary header-->
 <div class="hero-image">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <h1>Text goes here</h1>
+      <div class="col-md-12 text-center">
+        <div class="content">
+        <h1 id="demo" class="white-heading"></h1>
+        <a href="<?php echo get_page_link(8); ?>"><button class="button-more text-center">videos</button></a>
+        </div>
       </div>
     </div>
   </div>
+</div>
+
+<!--
+<div class="homepage-hero-module">
+    <div class="video-container">
+        <div class="filter"></div>
+        <div style="overflow: hidden; width: 100%; height: 600px;">
+        <video autoplay loop muted class="fillWidth">
+            <source src="<?php echo get_template_directory_uri(); ?>/video/bz-trailer-three.mp4" type="video/mp4" />
+            <source src="" type="video/webm" />
+        </video>
+        </div>
+        <div class="poster hidden">
+            <img src="<?php echo get_template_directory_uri(); ?>/brainzapped-theme/resources/img/new-img.jpg" alt="">
+        </div>
+    </div>
+</div>
+-->
+<!--<div class="header-video">
+    <img src="https://static.pexels.com/photos/199470/pexels-photo-199470.jpeg"
+         class="header-video__media"
+         data-video-URL="<?php echo get_template_directory_uri(); ?>/video/bz-trailer-three.mp4"
+         data-teaser="video/teaser-video"
+         data-video-width="560"
+         data-video-height="315">
+    <a href="<?php echo get_template_directory_uri(); ?>/video/bz-trailer-three.mp4" class="header-video__play-trigger" id="header-video__play-trigger">Play video</a>
+    <button type="button" class="header-video__close-trigger" id="header-video__close-trigger">Close video</button>
 </div>-->
 
-
-
-<!-- hero video -->
+<!-- hero video 
 
 <div class="hero">
 <div class="header-container">
@@ -42,7 +70,7 @@ get_header(); ?>
 
     </div>
 </div>
-</div>
+</div>-->
 <!-- about section-->
 
 <div class="about">
@@ -97,9 +125,13 @@ get_header(); ?>
                         <p><?php echo wp_trim_words( get_the_content(), 12, '...' ); ?></p>
                     <a href="<?php the_permalink(); ?>"><button class="button">play video</button></a><br>
                     <a href="https://twitter.com/share?
-  url=brainzapped.com
-  related=twitterapi%2Ctwitter&
-  text=custom%20share%20text"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="https://www.facebook.com/video.php?v={id}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                              url=brainzapped.com
+                              related=twitterapi%2Ctwitter&
+                                text=custom%20share%20text"><i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.facebook.com/video.php?v={id}">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
   					</div>
 				</div>
         </div>
@@ -217,14 +249,14 @@ get_header(); ?>
 <div class="container">
 	<div class="row">
     	<div class="col-md-12">
-        	<h3>PLAYLIST- "BRAIN ZAPPED VOLUME 1"</h3>
+        	<h3>PLAYLIST- "BZ SCIENCE VOLUME ONE"</h3>
         </div>
     </div>
 </div>
 	<div class="container">
     	<div class="row" id="ms-container">
 
-       <?php query_posts('category_name=brain-zapped'); ?>
+       <?php query_posts('category_name=bz-science-volume-one'); ?>
         <?php while ( have_posts() ) : the_post(); ?>
           
         	<div class="ms-item col-xs-12 col-sm-6 col-md-6">
@@ -269,9 +301,9 @@ get_header(); ?>
       
         });
 
-  $('.type-it').typeIt({
+ /* $('.type-it').typeIt({
     strings: ['Headline Text will go here', 'And anything else we want to add!']
-  });
+  });*/
 
     </script>
 <?php get_footer(); ?>
